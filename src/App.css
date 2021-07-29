@@ -1,0 +1,32 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+:root {
+  --primary-color: #DF7415;
+  --second-color: #CBEFEF;
+  --sponsor-color: #737373;
+}
+
+header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  height: 100%;
+}
+
+footer {
+  grid-area: footer;
+}
+

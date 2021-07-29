@@ -1,0 +1,20 @@
+div {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+}
+
+Header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.Footer {
+  grid-area: footer;
+}

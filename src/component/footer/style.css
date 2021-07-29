@@ -1,0 +1,62 @@
+footer {
+  background-color: var(--primary-color);
+  padding-bottom: 2rem;
+  height: auto;
+}
+
+footer img {
+  position: relative;
+}
+
+footer .container {
+  padding-top: 2rem;
+  height: 100%;
+}
+
+.footer-text p {
+  padding-bottom: 0.5rem;
+  margin:0
+}
+
+.footer-text p:first-child {
+  font-weight: 600;
+}
+
+.content1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+}
+
+.footer-text {
+  align-self: center;
+}
+
+.socmed {
+  text-align: center;
+}
+
+.socmed i {
+  font-size: 1.2rem;
+  padding-right: 0.8rem;
+  cursor: pointer;
+}
+.socmed i:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+
+.credit-title {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
