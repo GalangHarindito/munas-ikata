@@ -11,8 +11,7 @@ export default function Footer() {
         <section className='footer-text'>
           <p>Ikatan Alumni Tambang UPN "Veteran" Yogyakarta</p>
           <p>
-            Ruko Malibu Square Blok B No.8 Kel. Lengkong Gudang Serpong
-            Tangerang Selatan 15321
+          Jl. Kemang Raya No.43, RT.9/RW.1, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730
           </p>
         </section>
       </section>

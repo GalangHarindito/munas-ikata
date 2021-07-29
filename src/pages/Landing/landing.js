@@ -10,6 +10,8 @@ import Card from "../../component/card/card";
 import upn from "../../assets/img-upn.png";
 import ikata from "../../assets/img-ikata.png";
 import president from "../../assets/img-president.jpg";
+import Sponsor from "../../component/sponsor/Sponsor";
+import video1 from "../../assets/vid-ikata-1.mp4";
 
 export default function Landing() {
   const cardEvent = [
@@ -137,19 +139,39 @@ export default function Landing() {
 </svg>*/}
       </div>
 
-      <div className='container' id='event'>
+      <div className='container' id='munas'>
         <section className='title-event' style={{ fontSize: "1rem" }}>
           <h2>Apa itu MUNAS IKATA ?</h2>
         </section>
+        <section className="content-munas">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat nibh varius velit aliquet, eget rutrum dolor suscipit. Donec sollicitudin odio in nisi accumsan, ac rhoncus tortor auctor. Nam semper nisi quis purus convallis, aliquam maximus nibh cursus. Sed eget arcu lorem. Sed quis neque venenatis, suscipit lorem et, placerat orci. Pellentesque sollicitudin risus et justo pulvinar venenatis. Aliquam eu velit non erat tempus ornare nec ut dolor.
+Suspendisse ornare nisi nulla, non blandit arcu mollis vitae. Etiam convallis pulvinar tellus et sagittis. Praesent venenatis tortor lectus, at semper nisl lacinia sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida velit vel vehicula venenatis. Etiam pulvinar dolor in imperdiet ullamcorper. Curabitur sollicitudin dapibus ipsum sit amet aliquam. Sed pulvinar, lectus nec mollis pharetra, sem urna molestie ante, sit amet mattis augue massa ac lectus. Curabitur accumsan tortor elit, at accumsan eros rutrum eget. Praesent sagittis mollis ex a facilisis.
+Pellentesque gravida placerat purus, ut ullamcorper diam vehicula ut. Proin at nibh bibendum ex porttitor laoreet. Duis sodales tempus placerat. Quisque ultrices id lectus quis volutpat. Vestibulum interdum tincidunt sollicitudin. Nullam at mattis libero. Sed sed massa dolor. Proin non felis eu massa finibus sagittis. Nunc eget est eget ex tincidunt vulputate ut at nunc. Integer vel lobortis neque. Aliquam feugiat sollicitudin posuere. Maecenas vel iaculis odio. Nulla convallis pellentesque libero a eleifend. Nullam in pellentesque lacus.
+Maecenas turpis neque, posuere eu nibh vitae, fermentum bibendum odio. Sed sed tempus purus, eu varius augue. Nunc tristique rhoncus odio vitae interdum. Nunc ante nibh, interdum gravida bibendum ut, pellentesque dignissim purus. Morbi in libero ex. Mauris at dapibus sapien, a porta augue. Etiam vehicula non mi eget iaculis. Quisque ultrices est vel massa efficitur mattis. In fermentum auctor mauris non consectetur. Morbi sem justo, scelerisque sit amet varius id, egestas in justo. Pellentesque a quam augue.
+Aliquam mattis tincidunt augue, non tempor quam laoreet sed. Nunc posuere erat turpis, ac ullamcorper nisi blandit id. Mauris tempus libero nec tellus maximus fermentum. Etiam vehicula quis mauris quis pellentesque. Pellentesque in metus in dolor ullamcorper ornare eu eget sapien. Aliquam efficitur, metus vitae pellentesque mollis, justo augue volutpat purus, quis commodo orci turpis a sapien. Sed eget felis vel libero luctus interdum a nec justo. Cras ornare non massa eget elementum. Donec aliquet ante sapien, id tristique nisl dignissim interdum. Mauris semper aliquam leo in placerat. Sed vitae pharetra nibh.
+        </section>
       </div>
-
-      <div className='container' id='event'>
+      <div className='pengurus'>
+      <div className='container' id='pengurus-ikata'>
         <section className='title-event' style={{ fontSize: "1rem" }}>
           <h2>Pengurus IKATA 2017 - 2021</h2>
         </section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sRgnYFIcOjc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
+        <br />
+        <div className="video-pengurus">
+          <iframe
+          width='700'
+          height='395'
+          src={video1}
+          title='YouTube video player'
+          frameBorder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen
+        ></iframe>
+        </div>
+        
       </div>
+         </div>
+
 
       <div className='container-event' id='event'>
         <section className='title-event' style={{ fontSize: "1rem" }}>
@@ -161,14 +183,14 @@ export default function Landing() {
         </section>
       </div>
 
-
-
-        <div className='sponsorship'>
+      <div className='sponsorship'>
         <div className='container'>
-          <section className='title-event' style={{ fontSize: "1.3rem" }}>
+          <section className='title-event' style={{ fontSize: "1rem" }}>
             <h2>Sponsor Acara</h2>
           </section>
+          <Sponsor />
           <section className='title-event'>
+            <br />
             <p>
               Ingin bergabung sebagai sponsor?
               <span>
@@ -177,7 +199,7 @@ export default function Landing() {
             </p>
           </section>
         </div>
-        </div>
+      </div>
     </section>
   );
 }
