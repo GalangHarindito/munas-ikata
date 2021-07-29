@@ -10,7 +10,6 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.pageYOffset);
     if (window.pageYOffset > 0) {
       setNavbar(true);
     } else {

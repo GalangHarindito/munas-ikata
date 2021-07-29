@@ -106,7 +106,7 @@ export default function Landing() {
             <h2>Ikatan Alumni Tambang UPN "Veteran" Yogyakarta</h2>
             <h3>Desember 2021</h3>
             {/*<h2 id='demo' />*/}
-            <section class='img-content1'>
+            <section className='img-content1'>
               <img src={ikata} alt='img-ikata' />
               <img src={upn} alt='img-upn' />
             </section>
@@ -148,7 +148,7 @@ export default function Landing() {
         <section className='title-event' style={{ fontSize: "1rem" }}>
           <h2>Pengurus IKATA 2017 - 2021</h2>
         </section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sRgnYFIcOjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sRgnYFIcOjc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
       </div>
 

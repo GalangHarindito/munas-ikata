@@ -9,8 +9,8 @@ export default function Card(props) {
     <div className='card-container'>
       {data.map((elem, id) => {
         return (
-          <div className='card'>
-            <a key={id}>
+          <div className='card' key={id}>
+            <a>
               <div className='card--display'>
                 <img src={elem.image} alt={elem.alt} />
                 <div className="line" />
