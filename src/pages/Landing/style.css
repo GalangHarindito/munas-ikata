@@ -1,241 +1,29 @@
-/*.parallax {
-
-  height: 100vh;
-
-  position: fixed;
-}
-
-#parallax {
-  display: block;
-}
-
-/*.parallax__layer{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-  img{
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-
-
-.parallax__cover{
-  background: #2D112B;
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 500px;
-  z-index: 1;
-}
-
-.parallax__layer__0 {
-  transform: translateZ(-300px) scale(4);
-}
-.parallax__layer__1 {
-  transform: translateZ(-250px) scale(3.5);
-}
-.parallax__layer__2 {
-  transform: translateZ(-200px) scale(3);
-}
-.parallax__layer__3 {
-  transform: translateZ(-150px) scale(2.5);
-}
-.parallax__layer__4 {
-  transform: translateZ(-100px) scale(2);
-}
-.parallax__layer__5 {
-  transform: translateZ(-50px) scale(1.5);
-}
-.parallax__layer__6 {
-  transform: translateZ(0px) scale(1);
-}*/
-
-/*.maincontent {
-  height: 100vh ;
-}
-
-.keyart_layer {
-  background-position: bottom center;
-  background-size: 90% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
-}
-
-#keyart-1 {
-  background-color: #fff;
-}
 
 
 .content-hero {
   text-align: left;
-  position: absolute;
-  opacity: 1;
-  top: 53%;
-  left: 55%;
-  right: 55%;
-  transform: translate(-50%, -50%);
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr; 
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
   width: 100%;
   align-self: center;
-}
-
-.bg-1 {
-  position: absolute;
-}
-
-.img-content1 img{
-  display: inline-block;
-  position: relative;
-  height: 6rem;
-  padding-right: 2rem;
-}
-
-#demo { 
-  color: rgb(0, 0, 0); 
-  opacity: 1;
-}
-
-h1 {
-  font-weight: 500;
-  font-size: 3rem;
-  margin: 0;
+  height: 100vh;
+  background-color: #F5B80E;
+  border-bottom-left-radius: 100px;
 }
 
 .content-hero-1 {
-  align-self: center;
+  grid-area: 1 / 1 / 2 / 2;
 }
-
-
 
 .icon-president {
-  align-self: center;
-  justify-content: center;
-}
-
-.icon-president img{
-  width: 50%;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 
 
-.content-hero-2 {
-  justify-content: center;
-  align-self: center;
-  display: grid; 
-  grid-auto-columns: auto; 
-  grid-template-columns: auto auto; 
-  grid-template-rows: auto auto auto; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "box1 box2"
-    "box3 box4"
-    "box5 box5"; 
-  height: 100%; 
-}
-
-.content-hero-2 img {
-  width: 280px;
-  padding: 1rem;
-}
-
-
-
-
-
-
-.box1 {
-  grid-area: box1;
-  background: #ff1616;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: dispay 2s ease-out;
-  -webkit-transition: dispay 2s ease-out;
-  -moz-transition: dispay 2s ease-out;
-  -ms-transition: dispay 2s ease-out;
-  -o-transition: dispay 2s ease-out;
-}
-
-.box1 p{
-  display: none;
-}
-
-.box1:hover img{
-  display: none;
-}
-
-.box1:hover p{
-  display: block;
-} 
-
-.box2 {
-  grid-area: box2;
-  background-color: #dcf3fe;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box2 img {
-  border-radius: 51% 49% 64% 36% / 47% 34% 66% 53%;
-  -webkit-border-radius: 51% 49% 64% 36% / 47% 34% 66% 53%;
-  -moz-border-radius: 51% 49% 64% 36% / 47% 34% 66% 53%;
-  -ms-border-radius: 51% 49% 64% 36% / 47% 34% 66% 53%;
-  -o-border-radius: 51% 49% 64% 36% / 47% 34% 66% 53%;
-}
-
-.box3 {
-  grid-area: box3;
-  background-color: #38b6ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box3 img {
-  border-radius: 83% 17% 85% 15% / 21% 87% 13% 79% ;
-  -webkit-border-radius: 83% 17% 85% 15% / 21% 87% 13% 79% ;
-  -moz-border-radius: 83% 17% 85% 15% / 21% 87% 13% 79% ;
-  -ms-border-radius: 83% 17% 85% 15% / 21% 87% 13% 79% ;
-  -o-border-radius: 83% 17% 85% 15% / 21% 87% 13% 79% ;
-}
-
-.box4 {
-  grid-area: box4;
-  background-color: #737373;
-}
-
-.box5 {
-  grid-area: box5;
-  background-color: #ffde59;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box5 img {
-  width: 450px;
-}*/
-
-.content-hero {
-  text-align: left;
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 0.7fr; 
-  width: 100%;
-  align-self: center;
-  height: 100vh;
-}
 
 .content-hero-1, .icon-president {
   align-self: center;
@@ -335,4 +123,5 @@ h1 {
 .pengurus {
   white-space: nowrap;
   padding-bottom: 1rem;
+  background-color: var(--sponsor-color);
 }
