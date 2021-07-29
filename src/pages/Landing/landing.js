@@ -7,7 +7,6 @@ import gathering from "../../assets/img-gathering3.png";
 import workshop from "../../assets/img-workshop.jpg";
 import seminar from "../../assets/img-seminar2.jpg";
 import Card from "../../component/card/card";
-import hero4 from "../../assets/img-hero4.jpg";
 import upn from "../../assets/img-upn.png";
 import ikata from "../../assets/img-ikata.png";
 import president from "../../assets/img-president.jpg";
@@ -56,37 +55,37 @@ export default function Landing() {
     //timer()
   }, []);
 
-  const timer = () => {
-    // Set the date we're counting down to
-    var countDownDate = new Date("Sep 1, 2021 16:00:00").getTime();
+  //const timer = () => {
+  //  // Set the date we're counting down to
+  //  var countDownDate = new Date("Sep 1, 2021 16:00:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-      // Get today's date and time
-      var now = new Date().getTime();
+  //  // Update the count down every 1 second
+  //  var x = setInterval(function () {
+  //    // Get today's date and time
+  //    var now = new Date().getTime();
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+  //    // Find the distance between now and the count down date
+  //    var distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  //    // Time calculations for days, hours, minutes and seconds
+  //    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //    var hours = Math.floor(
+  //      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //    );
+  //    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  //    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML =
-        days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s ";
+  //    // Display the result in the element with id="demo"
+  //    document.getElementById("demo").innerHTML =
+  //      days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s ";
 
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  };
+  //    // If the count down is finished, write some text
+  //    if (distance < 0) {
+  //      clearInterval(x);
+  //      document.getElementById("demo").innerHTML = "EXPIRED";
+  //    }
+  //  }, 1000);
+  //};
 
   //const heroBg = {
   //  backgroundImage: `url(${hero4})`,
@@ -173,7 +172,7 @@ export default function Landing() {
             <p>
               Ingin bergabung sebagai sponsor?
               <span>
-                <a href=''>hubungi kami</a>
+                <a href='#event'>hubungi kami</a>
               </span>
             </p>
           </section>

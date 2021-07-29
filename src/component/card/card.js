@@ -1,16 +1,15 @@
 import React from "react";
-import {Link} from "react-router-dom"
 import "./style.css";
 
 export default function Card(props) {
   const data = props.data;
-  const backgroundColor = data.backgroundColor
+
   return (
     <div className='card-container'>
       {data.map((elem, id) => {
         return (
           <div className='card' key={id}>
-            <a>
+            <div className="box-card" href='/'>
               <div className='card--display'>
                 <img src={elem.image} alt={elem.alt} />
                 <div className="line" />
@@ -28,7 +27,7 @@ export default function Card(props) {
                 </p>
                 <p className='link' style={{color:'#000'}}>Lihat Detail</p>
               </section>
-            </a>
+            </div>
             {/*<section class='card--border'></section>*/}
           </div>
         );
