@@ -19,7 +19,7 @@ footer .container {
 }
 
 .footer-text p:first-child {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .content1 {
@@ -59,4 +59,39 @@ footer .container {
   margin-top: 1rem;
   text-align: center;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ .container {
+   margin: 0 3rem;
+ }
+
+ .content1 img{
+  width: 5rem!important;
+ }
+
+ .footer-text p:first-child {
+   font-size: 0.8rem;
+ }
+
+ .footer-text p {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.credit-title p, span{
+  font-size: 0.6rem;
+}
+
+footer {
+  padding: 0;
+}
 }

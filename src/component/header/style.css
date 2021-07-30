@@ -84,3 +84,25 @@ nav {
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 0.5rem 0.8rem!important;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-container img{
+    position: relative;
+    height: 2rem;
+    margin-right: 0.5rem;
+  
+  }
+
+  .nav-container h4{
+    font-size: 0.8rem;
+  
+  }
+}

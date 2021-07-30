@@ -63,7 +63,7 @@ grid-row-gap: 0px;
 }
 
 .container {
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
   margin: 0 10rem;
 }
 
@@ -125,3 +125,78 @@ grid-row-gap: 0px;
   padding-bottom: 1rem;
   background-color: var(--sponsor-color);
 }
+
+.video-pengurus iframe {
+  width: 700;
+  height: 395;
+}
+
+@media screen and (max-width: 700px) {
+  .container-event {
+    margin: 0rem 0rem;
+    width: 100%;
+  }
+
+  .container {
+    padding: 2rem 2rem!important;
+    margin: 0 0rem!important;
+  }
+
+  .video-pengurus iframe {
+    width: 347px;
+    height: 190px;
+  }
+
+.icon-president{
+    display: none!important;
+  }
+
+  .content-hero-1 h2:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+  .content-hero-1 h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-hero {
+    text-align: center;
+    display: block;
+    align-self: center;
+    height: 100%;
+    padding: 4rem 0 1rem 0;
+  }
+  
+  .content-hero-1 h3 {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .sponsorship .container .title-event p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.sponsorship .container .title-event a {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.img-content1 img{
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+.title-event h2 {
+  padding-bottom: 1rem;
+}
+
+.container-event {
+  padding: 2rem 0 0 1rem;
+}
+
+ }

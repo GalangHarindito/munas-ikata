@@ -162,7 +162,7 @@ Aliquam mattis tincidunt augue, non tempor quam laoreet sed. Nunc posuere erat t
           width='700'
           height='395'
           src={video1}
-          title='YouTube video player'
+          title='Ikata video player'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen

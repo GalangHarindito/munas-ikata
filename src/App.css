@@ -9,12 +9,14 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
+  font-size: 16px;
 }
 
 :root {
   --primary-color: #DF7415;
   --second-color: #CBEFEF;
   --sponsor-color: #F9FAFB;
+  font-size: 16px;
 }
 
 header {
