@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import ikata from "../../assets/img-ikata.png";
 import munas from "../../assets/img-munas-3.png";
-import { Link, useLocation, HashRouter } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const location = useLocation();
-  const { pathname, hash } = location;
-  console.log(location)
+  const { pathname } = location;
   const splitLocation = pathname.split("/");
   const [navbar, setNavbar] = useState(false);
   const [menuBar, setMenuBar] = useState(false);

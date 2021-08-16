@@ -4,7 +4,6 @@ import * as Yup from "yup";
 import "./style.css";
 import Button from "../../elements/button/Button";
 import { fetchSentEmail } from "./action";
-import { sentEmail } from "../../../utils/fetch";
 
 const DisplayingErrorMessagesSchema = Yup.object().shape({
   username: Yup.string().required("Wajib mengisi nama!"),
