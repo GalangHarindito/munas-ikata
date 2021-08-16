@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--primary-color);
+  background-color: #998B7B;
   padding-bottom: 2rem;
   height: auto;
 }
@@ -37,7 +37,7 @@ footer .container {
 }
 
 .socmed i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-right: 0.8rem;
   cursor: pointer;
 }
@@ -58,6 +58,10 @@ footer .container {
 .credit-title {
   margin-top: 1rem;
   text-align: center;
+  font-size: 0.7rem;
+}
+
+.credit-title p, span{
   font-size: 0.8rem;
 }
 
@@ -80,11 +84,13 @@ footer .container {
 
  .footer-text p:first-child {
    font-size: 0.8rem;
+   text-align: center;
  }
 
  .footer-text p {
   font-size: 0.8rem;
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 .credit-title p, span{

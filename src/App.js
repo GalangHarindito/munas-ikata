@@ -7,7 +7,10 @@ import {
 } from "react-router-dom";
 import Header from './component/header/header';
 import Footer from './component/footer/footer';
-import Event from './pages/Event/event'
+import Event from './pages/Event/event';
+import Contact from './pages/Contact/contact';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
   return (
@@ -16,6 +19,7 @@ export default function App() {
        <Switch>
          <Route exact path="/" component={Landing} />
          <Route exact path="/event" component={Event} />
+         <Route exact path="/contactUs" component={Contact} />
        </Switch>
      <Footer />
    </Router>

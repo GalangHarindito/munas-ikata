@@ -16,11 +16,11 @@ export default function Footer() {
         </section>
       </section>
       <section className='socmed'>
-        <i className='fa fa-instagram'></i>
-        <i className='fa fa-facebook'></i>
+        <a href="https://www.instagram.com/munasikata2021/"><i className='fa fa-instagram'></i></a>
         <i className='fa fa-youtube'></i>
-        <i className='fa fa-twitter'></i>
-        <i className='fa fa-globe'></i>
+        {/*<i className='fa fa-facebook'></i>
+        <i className='fa fa-twitter'></i>*/}
+        <a href="https://ikata.or.id/"><i className='fa fa-globe'></i></a>
       </section>
       <section className='credit-title'>
         <i className='fa fa-copyright'></i> <span>copyright 2021</span>

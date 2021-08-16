@@ -1,0 +1,60 @@
+.formContact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.validation {
+  color: red;
+  align-self: start!important;
+}
+
+.formContact section {
+  margin-bottom: 1rem;
+}
+
+.formContact section input {
+  height: 2rem;
+  width: 35rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+.formContact section textarea {
+  width: 35rem;
+  padding: 0.5rem;
+}
+
+/*.submit {
+  padding: 1rem;
+  background-color: #86cece;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}*/
+
+.Toastify__toast--success {
+  background: #86cece!important;
+}
+
+.Toastify__toast-body {
+  font-weight: 500;
+  width: 100%;
+}
+
+.Toastify__close-button {
+  width: 1rem;
+}

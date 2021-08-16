@@ -1,34 +1,34 @@
-
-
 .content-hero {
-  text-align: left;
-  display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  display: grid; 
+  grid-template-rows: 3.5fr 0.5fr; 
   width: 100%;
-  align-self: center;
   height: 100vh;
-  background-color: #F5B80E;
-  border-bottom-left-radius: 100px;
 }
 
 .content-hero-1 {
-  grid-area: 1 / 1 / 2 / 2;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 45%);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
+.icon-munas {
+  width: 90rem;
+}
 .icon-president {
   grid-area: 1 / 2 / 2 / 3;
 }
 
 
+/*.icon-munas {
+  width: 20rem;
+}*/
 
 
-.content-hero-1, .icon-president {
-  align-self: center;
-  justify-self: center;
-}
 
 .content-hero-1 h2 {
   font-weight: 500;
@@ -47,14 +47,18 @@ grid-row-gap: 0px;
   font-weight: 600;
 }
 
-.img-content1 img{
-  display: inline-block;
+.img-content1{
+  display: flex;
+  justify-content: center;
   position: relative;
-  height: 6rem;
-  padding-right: 2rem;
 }
 
-.icon-president img{
+.img-content1 img {
+  height: 8rem;
+  padding-right: 4rem;
+}
+
+.icon-president img {
   width: 100%;
 }
 
@@ -63,7 +67,7 @@ grid-row-gap: 0px;
 }
 
 .container {
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   margin: 0 10rem;
 }
 
@@ -71,9 +75,9 @@ grid-row-gap: 0px;
   text-align: center;
 }
 
-.title-event h2{
+.title-event h2 {
+  font-size: 2rem;
   font-weight: 600;
-  padding-bottom: 1rem;
   margin-bottom: 0;
 }
 
@@ -90,7 +94,7 @@ grid-row-gap: 0px;
   -o-transition: all 0.5s;
 }
 
-.sponsorship  {
+.sponsorship {
   background-color: var(--sponsor-color);
   white-space: nowrap;
 }
@@ -131,6 +135,14 @@ grid-row-gap: 0px;
   height: 395;
 }
 
+.sponsorship .container .title-event:first-child {
+  padding-bottom: 2rem;
+}
+
+#munas .title-event h2 {
+  padding-bottom: 2rem;
+}
+
 @media screen and (max-width: 700px) {
   .container-event {
     margin: 0rem 0rem;
@@ -138,8 +150,8 @@ grid-row-gap: 0px;
   }
 
   .container {
-    padding: 2rem 2rem!important;
-    margin: 0 0rem!important;
+    padding: 2rem 2rem !important;
+    margin: 0 0rem !important;
   }
 
   .video-pengurus iframe {
@@ -147,14 +159,14 @@ grid-row-gap: 0px;
     height: 190px;
   }
 
-.icon-president{
-    display: none!important;
+  .icon-president {
+    display: none !important;
   }
 
   .content-hero-1 h2:first-child {
     font-size: 2rem;
     font-weight: 600;
-}
+  }
 
   .content-hero-1 h2 {
     font-weight: 500;
@@ -169,7 +181,7 @@ grid-row-gap: 0px;
     height: 100%;
     padding: 4rem 0 1rem 0;
   }
-  
+
   .content-hero-1 h3 {
     font-weight: 500;
     font-size: 0.8rem;
@@ -179,24 +191,24 @@ grid-row-gap: 0px;
   .sponsorship .container .title-event p {
     font-size: 0.8rem;
     font-weight: 500;
-}
+  }
 
-.sponsorship .container .title-event a {
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+  .sponsorship .container .title-event a {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 
-.img-content1 img{
-  height: 3rem;
-  padding-right: 1rem;
-}
+  .img-content1 img {
+    height: 3rem;
+    padding-right: 1rem;
+  }
 
-.title-event h2 {
-  padding-bottom: 1rem;
-}
+  .title-event h2 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
 
-.container-event {
-  padding: 2rem 0 0 1rem;
+  .content-munas {
+    font-size: 0.8rem;
+  }
 }
-
- }
