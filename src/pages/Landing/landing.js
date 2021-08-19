@@ -20,35 +20,35 @@ export default function Landing() {
       alt: "golf",
       title: "IKATA Golf Tournament",
       backgroundColor: "#38b6ff",
-      path: '/events?tab=GOLF'
+      path: '/events?event=golf'
     },
     {
       image: image.competition,
       alt: "competition",
       title: "IKATA Competition",
       backgroundColor: "#737373",
-      path: '/events?tab=COMPETITION'
+      path: '/events?event=competition'
     },
     {
       image: image.seminar,
       alt: "seminar",
       title: "IKATA National Seminar / Webinar",
       backgroundColor: "#dcf3fe",
-      path: '/events?tab=SEMINAR/WEBINAR'
+      path: '/events?event=seminar/webinar'
     },
     {
       image: image.workshop,
       alt: "workshop",
       title: "IKATA workshop",
       backgroundColor: "#dcf3fe",
-      path: '/events?tab=WORKSHOP'
+      path: '/events?event=workshop'
     },
     {
       image: image.gathering,
       alt: "gathering",
       title: "IKATA Gathering",
       backgroundColor: "#ffde59",
-      path: '/events?tab=GATHERING'
+      path: '/events?event=gathering'
     },
   ];
 

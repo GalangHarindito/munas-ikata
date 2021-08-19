@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import * as image from "../../utils/image";
 import Tabs from "../../component/tabs/Tabs";
@@ -12,7 +12,13 @@ import Workshop from '../../component/fragment/workshop/Workhop';
 
 export default function Event() {
 
+  const onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  }
 
+  useEffect(() => {
+    onbeforeunload()
+  })
 
   const data = {
     navItems: ['Golf', 'Competition', 'Seminar / Webinar', 'Workshop', 'Gathering'],
