@@ -1,17 +1,21 @@
 .content-hero {
-  display: grid; 
-  grid-template-rows: 3.5fr 0.5fr; 
+  display: grid;
+  grid-template-rows: 3.5fr 0.5fr;
   width: 100%;
   height: 100vh;
 }
 
 .content-hero-1 {
-  background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 45%);
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(134, 206, 206, 1) 65%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -23,12 +27,9 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 
   grid-area: 1 / 2 / 2 / 3;
 }
 
-
 /*.icon-munas {
   width: 20rem;
 }*/
-
-
 
 .content-hero-1 h2 {
   font-weight: 500;
@@ -47,7 +48,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 
   font-weight: 600;
 }
 
-.img-content1{
+.img-content1 {
   display: flex;
   justify-content: center;
   position: relative;
@@ -95,7 +96,6 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 
 }
 
 .sponsorship {
-  background-color: var(--sponsor-color);
   white-space: nowrap;
 }
 
@@ -121,9 +121,23 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 
 }
 
 .content-munas {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-gap: 5rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.content-munas:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-gap: 5rem;
   text-align: justify;
 }
 
+.content-munas .evoting img {
+  width: 23rem;
+}
 .pengurus {
   white-space: nowrap;
   padding-bottom: 1rem;
@@ -141,6 +155,37 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(134,206,206,1) 
 
 #munas .title-event h2 {
   padding-bottom: 2rem;
+  text-align: start;
+}
+
+#munas .title-event:last-child h2 {
+  padding-bottom: 2rem;
+  text-align: start;
+}
+
+.question img {
+  width: 24rem;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1rem;
+}
+
+.yel {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.yel h3 {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 700;
+  color: red;
 }
 
 @media screen and (max-width: 700px) {

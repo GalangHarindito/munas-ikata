@@ -1,0 +1,13 @@
+.event {
+  padding: 2rem 3rem;
+  margin: 0 10rem 2rem 10rem;
+  height: 50rem;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5rem;
+}

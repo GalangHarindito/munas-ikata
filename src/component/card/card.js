@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { Link } from 'react-router-dom'
 
 export default function Card(props) {
   const data = props.data;
@@ -28,9 +29,9 @@ export default function Card(props) {
                     lacinia. Cras volutpat arcu sit amet elit sodales, nec
                     volutpat velit bibendum.
                   </p>
-                  <p className='link' style={{ color: "#000" }}>
+                  <Link className='link' style={{ color: "#000" }} to={elem.path}>
                     Lihat Detail
-                  </p>
+                  </Link>
                 </section>
               </div>
               {/*<section class='card--border'></section>*/}

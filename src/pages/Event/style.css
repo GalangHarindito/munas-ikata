@@ -1,0 +1,10 @@
+.header img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-bottom-right-radius: 100px;
+-webkit-border-bottom-left-radius: 100px;
+-moz-border-radius-bottomright: 100px;
+-moz-border-radius-bottomleft: 100px;
+border-bottom-right-radius: 100px;
+border-bottom-left-radius: 100px;
+}

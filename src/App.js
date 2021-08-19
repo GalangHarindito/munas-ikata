@@ -18,7 +18,7 @@ export default function App() {
      <Header />
        <Switch>
          <Route exact path="/" component={Landing} />
-         <Route exact path="/event" component={Event} />
+         <Route exact path="/events" component={Event} />
          <Route exact path="/contactUs" component={Contact} />
        </Switch>
      <Footer />

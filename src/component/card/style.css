@@ -132,15 +132,16 @@
   font-weight: normal;
   line-height: 1.5;
   font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
-.card-container .card .box-card .card--hover p.link {
-  margin: 20px 0 0;
+.card-container .card .box-card .card--hover a.link {
   font-weight: bold;
   cursor: pointer;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
-.card-container .card .box-card .card--hover p.link:hover {
+.card-container .card .box-card .card--hover a.link:hover {
   text-decoration: underline;
 }
 
@@ -304,14 +305,15 @@
   line-height: 1.5;
   font-size: 0.8rem;
 }
- .card .box-card .card--hover p.link {
+ .card .box-card .card--hover a.link {
   margin: 20px 0 0;
   font-weight: bold;
   cursor: pointer;
   font-size: 0.8rem;
+  text-decoration: underline;
 }
 
- .card .box-card .card--hover p.link:hover {
+ .card .box-card .card--hover a.link:hover {
   text-decoration: underline;
 }
 

@@ -9,7 +9,8 @@ import imgWorkshop from "../assets/img-workshop.jpg";
 import imgSeminar from "../assets/img-seminar2.jpg"
 import imgCampus from "../assets/bg-upn.jpg";
 import imgCampusCrop from "../assets/bg-upn-crop.jpg";
-
+import imgQuestion from "../assets/img-question.png";
+import imgEvoting from "../assets/img-evoting2.png";
 
 export const ikata = imgIkata;
 export const upn = imgUpn;
@@ -22,3 +23,5 @@ export const workshop = imgWorkshop;
 export const seminar = imgSeminar;
 export const campus = imgCampus;
 export const campusCrop = imgCampusCrop;
+export const question = imgQuestion;
+export const evoting = imgEvoting;
