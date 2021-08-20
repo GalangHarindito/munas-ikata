@@ -17,7 +17,7 @@ export default function Footer() {
       </section>
       <section className='socmed'>
         <a href="https://www.instagram.com/munasikata2021/"><i className='fa fa-instagram'></i></a>
-        <i className='fa fa-youtube'></i>
+        <a href="https://www.youtube.com/channel/UCd-fUSOU5V8Mz1rUf2m0SfA/videos"><i className='fa fa-youtube'></i></a>
         {/*<i className='fa fa-facebook'></i>
         <i className='fa fa-twitter'></i>*/}
         <a href="https://ikata.or.id/"><i className='fa fa-globe'></i></a>

@@ -1,36 +1,12 @@
 import React from "react";
 import "./style.css";
-import sponsor1 from "../../assets/sponsor/CSS.png";
-import sponsor2 from "../../assets/sponsor/html.png";
-import sponsor3 from "../../assets/sponsor/logo512.png";
-import sponsor4 from "../../assets/sponsor/js.png";
+import * as image from '../../utils/imageSponsor';
 
 export default function Sponsor() {
   const sponsor = [
-    {image:sponsor1, sponsorName:'css'},
-    {image:sponsor2, sponsorName:'html'},
-    {image:sponsor3, sponsorName:'css'},
-    {image:sponsor4, sponsorName:'html'},
-    {image:sponsor1, sponsorName:'css'},
-    {image:sponsor2, sponsorName:'html'},
-    {image:sponsor3, sponsorName:'css'},
-    {image:sponsor4, sponsorName:'html'},
-    {image:sponsor1, sponsorName:'css'},
-    {image:sponsor2, sponsorName:'html'},
-    {image:sponsor3, sponsorName:'css'},
-    {image:sponsor4, sponsorName:'html'},
-    {image:sponsor1, sponsorName:'css'},
-    {image:sponsor2, sponsorName:'html'},
-    {image:sponsor3, sponsorName:'css'},
-    {image:sponsor4, sponsorName:'html'},
-    {image:sponsor1, sponsorName:'css'},
-    {image:sponsor2, sponsorName:'html'},
-    {image:sponsor3, sponsorName:'css'},
-    {image:sponsor4, sponsorName:'html'},
-    {image:sponsor1, sponsorName:'css'},
-    {image:sponsor2, sponsorName:'html'},
-    {image:sponsor3, sponsorName:'css'},
-    {image:sponsor4, sponsorName:'html'},
+    {image:image.sponsor1, sponsorName:'img-GPE'},
+    {image:image.sponsor2, sponsorName:'img-GPE'},
+    {image:image.sponsor3, sponsorName:'img-GPE'},
   ]
   return (
     <div className="sponsor-content">

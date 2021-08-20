@@ -56,6 +56,10 @@
 
 .img-content1 img {
   height: 8rem;
+}
+
+.img-content1 img:first-child {
+  height: 8rem;
   padding-right: 4rem;
 }
 
@@ -96,6 +100,7 @@
 }
 
 .sponsorship {
+  background-color: var(--sponsor-color);
   white-space: nowrap;
 }
 
@@ -187,6 +192,36 @@
   font-weight: 700;
   color: red;
 }
+
+.podcast-pengurus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+
+.podcast-pengurus iframe{
+  margin-bottom: 1rem;
+}
+
+.podcast-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.podcast-footer a{
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.podcast-footer a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+
 
 @media screen and (max-width: 700px) {
   .container-event {

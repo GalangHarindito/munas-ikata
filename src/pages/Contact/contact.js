@@ -5,7 +5,7 @@ import ContactUs from "../../component/form/contactUs/ContactUs";
 
 export default function Contact() {
   const contactPerson = [
-    { name: "Galang Harindito", phoneNum: "081349241901", email: "galang.harindito@gmail.com" },
+    { name: "Galang Harindito", phoneNum: "0813XXXXXXX", email: "galang.harindito@gmail.com" },
     { name: "Name 2", phoneNum: "0814XXX", email: "XXXXX@XXX.com" },
     { name: "Name 3", phoneNum: "0814XXX", email: "XXXXX@XXX.com" },
   ];
@@ -43,7 +43,7 @@ export default function Contact() {
         <h2>Contact Us</h2>
         <div className='contentBody'>
           <div>
-          <h4>Email</h4>
+          <h4>Kirim Pesan</h4>
             <ContactUs />
           </div>
           <div className="contentBody3">

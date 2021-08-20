@@ -49,7 +49,7 @@ export default function ContactUs() {
             {touched.message && errors.message && <div className='validation'>{errors.message}</div>}
             </section>
            
-            <Button type='submit' label='Kirim Pesan' />
+            <Button type='submit' label='Submit' />
           </Form>
         )}
       </Formik>

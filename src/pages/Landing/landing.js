@@ -6,6 +6,7 @@ import video1 from "../../assets/vid-ikata-1.mp4";
 import * as image from "../../utils/image";
 import { Link } from "react-router-dom";
 import * as text from "../../component/text/text";
+import { podcast } from "../../utils/videoPodcast";
 
 export default function Landing() {
   const cardEvent = [
@@ -64,6 +65,16 @@ export default function Landing() {
     onbeforeunload()
   })
 
+  const vidPodcast = () => {
+    return (
+      <>
+      {podcast.map(el => {
+        return el.image
+      })}
+      </>
+    )
+  }
+
   //const timer = () => {
   //  // Set the date we're counting down to
   //  var countDownDate = new Date('Sep 1, 2021 16:00:00').getTime();
@@ -111,6 +122,7 @@ export default function Landing() {
             <h3>Desember 2021</h3>*/}
             {/*<h2 id='demo' />*/}
             <img className='icon-munas' src={image.munas1} alt='img-munas' />
+            <h2 style={{color:'#fff', fontWeight:'600'}}>DESEMBER 2021</h2>
             <section className='img-content1'>
               <img src={image.ikata} alt='img-ikata' />
               <img src={image.upn} alt='img-upn' />
@@ -205,6 +217,21 @@ export default function Landing() {
         </div>
       </div>
 
+      <div className='podcast'>
+        <div className='container' id='podcast-ikata'>
+          <section className='title-event' style={{ fontSize: "2rem" }}>
+            <h2>Podcast IKATA</h2>
+          </section>
+          <br />
+          <div className='podcast-pengurus'>
+           {vidPodcast()}
+          </div>
+          <div className='podcast-footer'>
+           <a href="https://www.youtube.com/channel/UCd-fUSOU5V8Mz1rUf2m0SfA/videos">Lihat video lainnya</a> 
+          </div>
+        </div>
+      </div>
+
       <div className='sponsorship'>
         <div className='container'>
           <section className='title-event' style={{ fontSize: "2rem" }}>
@@ -231,6 +258,10 @@ export default function Landing() {
         <section className='title-event'>
         </section>
       </div>
+
+      
+
+
 
 
     </section>
