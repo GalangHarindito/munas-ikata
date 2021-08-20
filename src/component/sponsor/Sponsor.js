@@ -7,6 +7,7 @@ export default function Sponsor() {
     {image:image.sponsor1, sponsorName:'img-GPE'},
     {image:image.sponsor2, sponsorName:'img-GPE'},
     {image:image.sponsor3, sponsorName:'img-GPE'},
+    {image:image.Sponsor4, sponsorName:'img-GPE'}
   ]
   return (
     <div className="sponsor-content">
