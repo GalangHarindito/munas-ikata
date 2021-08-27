@@ -31,21 +31,6 @@
   padding: 0.5rem;
 }
 
-/*.submit {
-  padding: 1rem;
-  background-color: #86cece;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 0px;
-  width: 100%;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}*/
-
 .Toastify__toast--success {
   background: #86cece!important;
 }
@@ -58,3 +43,4 @@
 .Toastify__close-button {
   width: 1rem;
 }
+

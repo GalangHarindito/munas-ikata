@@ -3,12 +3,8 @@
 .header img {
   width: 100%;
   height: 100%;
-  -webkit-border-bottom-right-radius: 100px;
--webkit-border-bottom-left-radius: 100px;
--moz-border-radius-bottomright: 100px;
--moz-border-radius-bottomleft: 100px;
-border-bottom-right-radius: 100px;
-border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
 }
 
 .contentBody {
@@ -45,11 +41,17 @@ border-bottom-left-radius: 100px;
   text-align: left;
 }
 
+.contactPerson h3{
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
 .contactPerson .person1 p, 
 .contactPerson .person2 p, 
 .contactPerson .person3 p{
   font-size: 1.2rem!important ;
  font-weight: normal!important;
+ letter-spacing: 0.05rem;
 }
 
 .contactPerson .person1, 
@@ -61,6 +63,7 @@ border-bottom-left-radius: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 0.3rem;
 }
 
 .contactPerson span i{
@@ -78,3 +81,46 @@ border-bottom-left-radius: 100px;
   -o-border-radius: 10px;
 }
 
+small {
+  color:red; 
+  font-weight: 500; 
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .body {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .header img {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  .contentBody {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .body h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    margin-top: 0;
+  }
+  .contactPerson .person1 p, 
+.contactPerson .person2 p, 
+.contactPerson .person3 p{
+  font-size: 0.85rem!important ;
+}
+.contactPerson h3{
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+.contentBody div h4{
+  margin: 1rem 0;
+}
+}

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import "./style.css";
 import Button from "../../elements/button/Button";
-import { fetchSentEmail } from "./action";
+import { sentEmail } from "../../../utils/fetch";
+import { toast } from "react-toastify";
 
 const DisplayingErrorMessagesSchema = Yup.object().shape({
   username: Yup.string().required("Wajib mengisi nama!"),
@@ -13,6 +14,7 @@ const DisplayingErrorMessagesSchema = Yup.object().shape({
 });
 
 export default function ContactUs() {
+  const [isLoading, setIsLoading] = useState(false)
   return (
     <div>
       <Formik
@@ -24,7 +26,38 @@ export default function ContactUs() {
         }}
         validationSchema={DisplayingErrorMessagesSchema}
         onSubmit={(values, {resetForm}, e) => {
-          fetchSentEmail(values)
+          
+          const notifySucess = () =>
+          toast.success("Pesan berhasil dikirim!", {
+            position: "top-center",
+            autoClose: 3500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+          });
+        const notifyFailed = (message) =>
+          toast.success(`${message}`, {
+            position: "top-center",
+            autoClose: 3500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+          });
+        setIsLoading(true)
+        sentEmail(values)
+          .then((res) => {
+            notifySucess();
+            setIsLoading(false)
+          })
+          .catch((error) => {
+            const message = error.message ||
+             "Ups, Sepertinya ada masalah. Silahkan coba lagi"
+             notifyFailed(message) 
+          });
           resetForm({})
         }}
       >
@@ -49,7 +82,7 @@ export default function ContactUs() {
             {touched.message && errors.message && <div className='validation'>{errors.message}</div>}
             </section>
            
-            <Button type='submit' label='Submit' />
+            <Button type='submit' label='Submit' isLoading={isLoading} />
           </Form>
         )}
       </Formik>

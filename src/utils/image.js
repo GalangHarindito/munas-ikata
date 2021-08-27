@@ -11,6 +11,7 @@ import imgCampus from "../assets/bg-upn.jpg";
 import imgCampusCrop from "../assets/bg-upn-crop.jpg";
 import imgQuestion from "../assets/img-question.png";
 import imgEvoting from "../assets/img-evoting2.png";
+import imgMunas3 from "../assets/img-munas-3.png";
 
 export const ikata = imgIkata;
 export const upn = imgUpn;
@@ -25,3 +26,4 @@ export const campus = imgCampus;
 export const campusCrop = imgCampusCrop;
 export const question = imgQuestion;
 export const evoting = imgEvoting;
+export const munas2 = imgMunas3;

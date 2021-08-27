@@ -6,7 +6,16 @@ import { Link } from 'react-router-dom'
 
 export default function Card(props) {
   const data = props.data;
-
+  let width = '50'
+  if(window.screen.width <= 700 && window.screen.width >= 551){
+    width = '50'
+  }
+  if(window.screen.width <= 550){
+    width = '70'
+  }
+  if(window.screen.width <= 375){
+    width = '90'
+  }
   return (
     <>
       <div className='card-container'>
@@ -42,10 +51,11 @@ export default function Card(props) {
 
       <Carousel
         centerMode
-        centerSlidePercentage='70'
-        infiniteLoop
+        centerSlidePercentage= {width}
         swipeable
-        autoPlay='false'
+        autoPlay={false}
+        showArrows={false}
+
       >
         {data.map((elem, id) => {
           return (
@@ -66,9 +76,10 @@ export default function Card(props) {
                     lacinia. Cras volutpat arcu sit amet elit sodales, nec
                     volutpat velit bibendum.
                   </p>
-                  <p className='link' style={{ color: "#000" }}>
+                  <br />
+                  <Link style={{ color: "#000" }}>
                     Lihat Detail
-                  </p>
+                  </Link>
                 </section>
               </div>
             </div>

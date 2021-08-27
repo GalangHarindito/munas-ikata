@@ -122,6 +122,9 @@ export default function Landing() {
             <h3>Desember 2021</h3>*/}
             {/*<h2 id='demo' />*/}
             <img className='icon-munas' src={image.munas1} alt='img-munas' />
+            <img className='icon-munas-mobile' src={image.munas2} alt='img-munas' />
+            <h1 className='icon-munas-mobile' style={{color:'#fff', fontWeight:'600', marginTop:'1rem', width:'100%'}}>MUSYAWARAH NASIONAL 6 IKATA</h1>
+            <h2 className='icon-munas-mobile' style={{color:'#fff', fontWeight:'600', width:'100%', marginBottom:'1rem'}}>UPN 'Veteran' YOGYAKARTA</h2>
             <h2 style={{color:'#fff', fontWeight:'600'}}>DESEMBER 2021</h2>
             <section className='img-content1'>
               <img src={image.ikata} alt='img-ikata' />

@@ -39,7 +39,7 @@ export default function Header() {
           <div className='bar2'></div>
           <div className='bar3'></div>
         </div>
-        <div className={`nav-menu`}>
+        <div className={`nav-menu ${menuBar?'nav-menu' : 'hidden'}`}>
           <ul>
             <li className={splitLocation[1] === "" ? "active" : ""}>
               <Link to='/'>Home</Link>

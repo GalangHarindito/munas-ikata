@@ -5,9 +5,9 @@ import ContactUs from "../../component/form/contactUs/ContactUs";
 
 export default function Contact() {
   const contactPerson = [
-    { name: "Galang Harindito", phoneNum: "0813XXXXXXX", email: "galang.harindito@gmail.com" },
-    { name: "Name 2", phoneNum: "0814XXX", email: "XXXXX@XXX.com" },
-    { name: "Name 3", phoneNum: "0814XXX", email: "XXXXX@XXX.com" },
+    { name: "Catur Gunadi", phoneNum: "081327166124", email: "cgndta92@gmail.com" },
+    { name: "Andriyan Harizona", phoneNum: "081368675431", email: "ucupharizona@gmail.com" },
+    { name: "Andi Haristiawan", phoneNum: "082153178877", email: "andi.haristiawan@gmail.com  " },
   ];
 
   const onbeforeunload = () => {
@@ -24,6 +24,7 @@ export default function Contact() {
         {contactPerson.map((el, idx) => {
           return (  
             <div key={idx} className={`person${idx+1}`}>
+              {el.name ==='Andi Haristiawan' && <h3>Kontak Sponsorship</h3>}
               <span><i className="fa fa-user"></i><p>{el.name}</p></span>
               <span><i className='fa fa-whatsapp'></i><p>{el.phoneNum}</p></span>
               <span><i className="fa fa-envelope"></i><p>{el.email}</p></span>
@@ -50,7 +51,7 @@ export default function Contact() {
             <h4>Kontak Panitia</h4>
             {table()}
             <br />
-            <small style={{color:'red', fontWeight: 500, fontSize:'0.8rem'}}>*Untuk menghubungi nomer telepon harap menggunakan chat whatsapp</small>
+            <small>*Untuk menghubungi nomer telepon harap menggunakan chat whatsapp</small>
           </div>
         </div>
       </div>
