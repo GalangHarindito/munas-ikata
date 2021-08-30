@@ -9,6 +9,7 @@ import Seminar from '../../component/fragment/seminar/Seminar';
 import Gathering from '../../component/fragment/gathering/Gathering';
 import Competition from '../../component/fragment/competition/Competition';
 import Workshop from '../../component/fragment/workshop/Workhop';
+import DropDown from '../../component/elements/Dropdown/DropDown';
 
 export default function Event() {
 
@@ -21,8 +22,15 @@ export default function Event() {
   })
 
   const data = {
-    navItems: ['Golf', 'Competition', 'Seminar / Webinar', 'Workshop', 'Gathering'],
-    navValues: ['golf', 'competition', 'seminar/webinar', 'workshop', 'gathering']
+    navItems: [
+      { idx:0, name:'Golf', value:'golf' }, 
+      { idx:1, name:'Competition', value:'competition' }, 
+      { idx:2, name:'Seminar / Webinar', value:'seminar / webinar' }, 
+      { idx:3, name:'Workshop', value:'workshop' }, 
+      { idx:4, name:'Gathering', value:'gathering' }
+    ],
+    navValues: ['golf', 'competition', 'seminar/webinar', 'workshop', 'gathering'],
+    tabsName:'tab'
   }
 
   return (
@@ -32,6 +40,11 @@ export default function Event() {
       </div>
       <div className='event-body'>
         <Tabs data= {data} />
+        <div className='drop-down'>
+          <p>Pilih Event:</p>
+          <DropDown id='dropDown' data= {data} />
+        </div>
+        
         <Content />
       </div>
     </section>
@@ -40,21 +53,21 @@ export default function Event() {
 
 function Content() {
   const { search } = useLocation();
-  const { event } = queryString.parse(search.replace('?', ''));
+  const { tab } = queryString.parse(search.replace('?', ''));
 
-  if(event === 'golf'){
+  if(tab === 'golf'){
     return <Golf />
   }
-  if(event === 'seminar/webinar'){
+  if(tab === 'seminar/webinar'){
     return <Seminar />
   }
-  if(event === 'gathering'){
+  if(tab === 'gathering'){
     return <Gathering />
   }
-  if(event === 'competition'){
+  if(tab === 'competition'){
     return <Competition />
   }
-  if(event === 'workshop'){
+  if(tab === 'workshop'){
     return <Workshop />
   }
   return <Golf />;

@@ -11,7 +11,7 @@
   display: grid; 
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr; 
-  gap: 0px 0px; 
+  gap: 4rem;
   width: 100%; 
   height: 100%; 
   padding: 1rem;
@@ -35,7 +35,7 @@
   justify-self: start;
 }
 
-.contentBody div h4{
+.contentBody div h3{
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: left;
@@ -87,6 +87,10 @@ small {
   font-size: 0.8rem;
 }
 
+.contentBody2 {
+  width: 35rem;
+}
+
 @media screen and (max-width: 700px) {
   .body {
     padding: 1rem 1rem 1rem 1rem;
@@ -104,8 +108,8 @@ small {
   .body h2 {
     font-size: 1.5rem;
     margin: 1rem 0rem;
-    padding: 0rem 1rem;
     margin-top: 0;
+    padding: 0 0 ;
   }
   .contactPerson .person1 p, 
 .contactPerson .person2 p, 
@@ -120,7 +124,126 @@ small {
   font-size: 0.7rem;
 }
 
-.contentBody div h4{
-  margin: 1rem 0;
+.contactPerson h3{
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
 }
+
+.contentBody2 {
+  width: 100%;
+}
+.contentBody div h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+
+}
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .header img {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  .contentBody {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .body h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    margin-top: 0;
+    padding: 0 0 ;
+  }
+  .contactPerson .person1 p, 
+.contactPerson .person2 p, 
+.contactPerson .person3 p{
+  font-size: 0.85rem!important ;
+}
+.contactPerson h3{
+  font-size: 0.85rem;
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+.contactPerson h3{
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.contentBody2 {
+  width: 100%;
+}
+.contentBody div h3 {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .body {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+
+
+.contentBody div h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.contactPerson h3{
+  font-size:1rem;
+  margin-bottom: 0.4rem;
+}
+
+.contactPerson h3{
+  font-size: 1rem;
+}
+
+.body h2 {
+  font-size: 2rem;
+  margin: 1rem 0rem;
+  margin-top: 0;
+  padding: 0 0 ;
+}
+.contactPerson .person1 p, 
+.contactPerson .person2 p, 
+.contactPerson .person3 p{
+  font-size: 1rem!important ;
+}
+.contactPerson h3{
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.85rem;
+}
+
+.contentBody {
+  grid-template-columns: 1fr 1fr; 
+  padding: 0 0 ;
+  gap: 4rem;
+}
+
+.contentBody2 {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 1500px) {
+
+.contentBody {
+  gap: 4rem;
+}
+
+
 }

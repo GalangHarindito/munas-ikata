@@ -43,12 +43,12 @@ export default function Contact() {
       <div className='body'>
         <h2>Contact Us</h2>
         <div className='contentBody'>
-          <div>
-          <h4>Kirim Pesan</h4>
+          <div className="contentBody2">
+          <h3>Kirim Pesan</h3>
             <ContactUs />
           </div>
           <div className="contentBody3">
-            <h4>Kontak Panitia</h4>
+            <h3>Kontak Panitia</h3>
             {table()}
             <br />
             <small>*Untuk menghubungi nomer telepon harap menggunakan chat whatsapp</small>

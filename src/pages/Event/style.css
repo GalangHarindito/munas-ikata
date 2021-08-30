@@ -8,3 +8,43 @@
 border-bottom-right-radius: 100px;
 border-bottom-left-radius: 100px;
 }
+
+
+.drop-down {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .drop-down {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+  }
+
+  .drop-down p{
+   font-size: 0.8rem;
+   justify-self: end;
+   align-self: center;
+  }
+
+
+}
+
+@media screen and (max-width: 900px) {
+  .drop-down {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+  }
+
+  .drop-down p{
+   font-size: 1rem;
+   justify-self: end;
+   align-self: center;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+}

@@ -72,8 +72,12 @@ footer .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 3rem!important;
+    margin: 0 1rem;
   }
+
+  footer .container{
+    margin: 0 2rem;
+  } 
   
  .content1 img{
   width: 5rem!important;
@@ -97,22 +101,20 @@ footer .container {
 footer {
   padding: 0;
 }
+
 }
 
 @media screen and (max-width: 900px) {
- .content1 {
-   margin: 0 5rem;
- }
-
- .content1 img{
-  width: 5rem!important;
- }
 
  .footer-text p:first-child {
    font-size: 0.8rem;
    text-align: left;
    padding:0;
  }
+ 
+ footer .container{
+  margin: 0 2rem;
+} 
 
  .footer-text p {
   font-size: 0.8rem;
@@ -120,9 +122,14 @@ footer {
   text-align: justify;
 }
 
-.credit-title p, span{
+.credit-title p{
   font-size: 0.6rem;
 }
+
+.credit-title span {
+  font-size: 0.6rem;
+}
+
 
 footer {
   padding: 0;

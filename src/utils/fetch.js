@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASIC_URL = 'https://munas-ikata.herokuapp.com'
+const BASIC_URL = 'https://app-dev.munasikataupn.com'
 const BASE_URL = `${BASIC_URL}/api/v1`;
 
 const fetch = (url, method, paramBody, paramHeader) => {
