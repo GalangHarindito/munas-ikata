@@ -45,9 +45,9 @@ export default function Header() {
             <li className={splitLocation[1] === "" ? "active" : ""}>
               <Link to='/'>Home</Link>
             </li>
-            {/*<li className={splitLocation[1] === "munas" ? "active" : ""}>
-              <Link to='/'>Munas 2021</Link>
-            </li>*/}
+            <li className={splitLocation[1] === "tentangMunas" ? "active" : ""}>
+              <Link to='/tentangMunas'>Tentang Munas 2021</Link>
+            </li>
             <li className={splitLocation[1] === "events" ? "active" : ""}>
               <Link to='/events'>Events</Link>
             </li>

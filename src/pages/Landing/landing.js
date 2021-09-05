@@ -3,9 +3,10 @@ import "./style.css";
 import Card from "../../component/card/card";
 import Sponsor from "../../component/sponsor/Sponsor";
 import video1 from "../../assets/vid-ikata-1.mp4";
+import video2 from "../../assets/vid-ikata-2.mp4";
 import * as image from "../../utils/image";
+import { ketua } from "../../utils/image";
 import { Link } from "react-router-dom";
-import * as text from "../../component/text/text";
 import { podcast } from "../../utils/videoPodcast";
 
 export default function Landing() {
@@ -15,41 +16,42 @@ export default function Landing() {
       alt: "vote",
       title: "MUNAS IKATA",
       backgroundColor: "#dcf3fe",
+      path: "/tentangMunas"
     },
     {
       image: image.golf,
       alt: "golf",
       title: "IKATA Golf Tournament",
       backgroundColor: "#38b6ff",
-      path: '/events?event=golf'
+      path: "/events?tab=golf",
     },
     {
       image: image.competition,
       alt: "competition",
       title: "IKATA Competition",
       backgroundColor: "#737373",
-      path: '/events?event=competition'
+      path: "/events?tab=competition",
     },
     {
       image: image.seminar,
       alt: "seminar",
       title: "IKATA National Seminar / Webinar",
       backgroundColor: "#dcf3fe",
-      path: '/events?event=seminar/webinar'
+      path: "/events?tab=seminar/webinar",
     },
     {
       image: image.workshop,
       alt: "workshop",
       title: "IKATA workshop",
       backgroundColor: "#dcf3fe",
-      path: '/events?event=workshop'
+      path: "/events?tab=workshop",
     },
     {
       image: image.gathering,
       alt: "gathering",
       title: "IKATA Gathering",
       backgroundColor: "#ffde59",
-      path: '/events?event=gathering'
+      path: "/events?tab=gathering",
     },
   ];
 
@@ -59,21 +61,40 @@ export default function Landing() {
 
   const onbeforeunload = () => {
     window.scrollTo(0, 0);
-  }
+  };
 
   useEffect(() => {
-    onbeforeunload()
-  })
+    onbeforeunload();
+  });
 
   const vidPodcast = () => {
     return (
       <>
-      {podcast.map(el => {
-        return el.image
-      })}
+        {podcast.map((el) => {
+          return el.image;
+        })}
       </>
-    )
-  }
+    );
+  };
+
+  
+
+  const _renderKetua = () => {
+    return (
+      <>
+        {ketua.map((el, idx) => {
+          return (
+            <div className='card-ketua' key={idx}>
+              <img src={el.image} alt={el.name} />
+              <p>{el.name}</p>
+              <p>{el.angkatan}</p>
+              <p>{el.periode}</p>
+          </div>
+          ) 
+        })}
+      </>
+    );
+  };
 
   //const timer = () => {
   //  // Set the date we're counting down to
@@ -122,10 +143,34 @@ export default function Landing() {
             <h3>Desember 2021</h3>*/}
             {/*<h2 id='demo' />*/}
             <img className='icon-munas' src={image.munas1} alt='img-munas' />
-            <img className='icon-munas-mobile' src={image.munas2} alt='img-munas' />
-            <h1 className='icon-munas-mobile' style={{color:'#fff', fontWeight:'600', marginTop:'1rem', width:'100%'}}>MUSYAWARAH NASIONAL 6 IKATA</h1>
-            <h2 className='icon-munas-mobile' style={{color:'#fff', fontWeight:'600', width:'100%', marginBottom:'1rem'}}>UPN 'Veteran' YOGYAKARTA</h2>
-            <h2 style={{color:'#fff', fontWeight:'600'}}>DESEMBER 2021</h2>
+            <img
+              className='icon-munas-mobile'
+              src={image.munas2}
+              alt='img-munas'
+            />
+            <h1
+              className='icon-munas-mobile'
+              style={{
+                color: "#fff",
+                fontWeight: "600",
+                marginTop: "1rem",
+                width: "100%",
+              }}
+            >
+              MUSYAWARAH NASIONAL 6 IKATA
+            </h1>
+            <h2
+              className='icon-munas-mobile'
+              style={{
+                color: "#fff",
+                fontWeight: "600",
+                width: "100%",
+                marginBottom: "1rem",
+              }}
+            >
+              UPN 'Veteran' YOGYAKARTA
+            </h2>
+            <h2 style={{ color: "#fff", fontWeight: "600" }}>DESEMBER 2021</h2>
             <section className='img-content1'>
               <img src={image.ikata} alt='img-ikata' />
               <img src={image.upn} alt='img-upn' />
@@ -175,47 +220,41 @@ export default function Landing() {
 
       <div className='container' id='munas'>
         <section className='title-event' style={{ fontSize: "2rem" }}>
-          <h2>Apa itu MUNAS IKATA ?</h2>
+          <h2>Ketua IKATA</h2>
         </section>
-        <section className='content-munas'>
-        <div className="question">
-            <img src={image.question} alt="img-question" />
-          </div>
-          <div className="text">
-            {text.ikata1}
-          </div>
-        </section>
-        <section className='content-munas'>
-       
-          <div className="text">
-            {text.ikata2}
-          </div>
-          <div className="evoting">
-            <img src={image.evoting} alt="img-question" />
-          </div>
-        </section>
-        <section className="yel">
+        <section className='ketua-ikata'>{_renderKetua()}</section>
+        {/*<section className='yel'>
           <h3>IKATA TANGGUH !!!</h3>
           <h3>VIVA TAMBANG MANTAP SKALIII !!!</h3>
-        </section>
+        </section>*/}
       </div>
       <div className='pengurus'>
         <div className='container' id='pengurus-ikata'>
           <section className='title-event' style={{ fontSize: "2rem" }}>
-            <h2>Pengurus IKATA 2017 - 2021</h2>
+            {/*<h2>Pengurus IKATA 2017 - 2021</h2>*/}
           </section>
           <br />
           <div className='video-pengurus'>
-            <iframe
+            <video
               width='700'
-              autoplay='false'
               height='395'
               src={video1}
               title='Ikata video player'
               frameBorder='0'
               allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
-            ></iframe>
+              controls
+            ></video>
+             <video
+              width='700'
+              height='395'
+              src={video2}
+              title='Ikata video player'
+              frameBorder='0'
+              allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+              controls
+            ></video>
           </div>
         </div>
       </div>
@@ -226,11 +265,11 @@ export default function Landing() {
             <h2>Podcast IKATA</h2>
           </section>
           <br />
-          <div className='podcast-pengurus'>
-           {vidPodcast()}
-          </div>
+          <div className='podcast-pengurus'>{vidPodcast()}</div>
           <div className='podcast-footer'>
-           <a href="https://www.youtube.com/channel/UCd-fUSOU5V8Mz1rUf2m0SfA/videos">Lihat video lainnya</a> 
+            <a href='https://www.youtube.com/channel/UCd-fUSOU5V8Mz1rUf2m0SfA/videos'>
+              Lihat video lainnya
+            </a>
           </div>
         </div>
       </div>
@@ -258,15 +297,8 @@ export default function Landing() {
           <h2>Events</h2>
         </section>
         <Card data={cardEvent} />
-        <section className='title-event'>
-        </section>
+        <section className='title-event'></section>
       </div>
-
-      
-
-
-
-
     </section>
   );
 }
