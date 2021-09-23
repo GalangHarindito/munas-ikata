@@ -11,11 +11,50 @@ body {
   color: #000000;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  animation: fade-in 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 4.375rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+
+h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: var(--text-color);
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.4375rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 0.875rem;
+}
+
+p{
+  margin-bottom: 0;
 }
 
 :root {
-  --primary-color: #DF7415;
+  --primary-color: #68AE29;
+  --text-grey:#898989;
   --second-color: #CBEFEF;
   --sponsor-color: #F9FAFB;
   font-size: 16px;

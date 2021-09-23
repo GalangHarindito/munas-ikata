@@ -3,6 +3,7 @@ import "./style.css";
 
 export default function Text(props) {
 const { className, input, inputProps, label, meta, helper, onClickIcon } = props;
+console.log(input)
 // const classes =   [
 //    textField,
 //    !!input.value || styles.empty,
@@ -17,14 +18,14 @@ const { className, input, inputProps, label, meta, helper, onClickIcon } = props
        <div >
       <label>{label}</label>
       <div className='wrapper'>
-        <input {...input} {...inputProps}  />
+      <input id={input.name} {...input} {...inputProps} />
         {/*{ icon &&
           <span className={styles.icon} onClick={onClickIcon}>
             <img alt="icon" src={`../../../assets/${icon}.svg`}/>
           </span>
         }*/}
       </div>
-      {!!error && (dirty || touched) && <small className='error'>{error}</small>}
+      {/*{!!error && (dirty || touched) && <small className='error'>{error}</small>}*/}
       <span>{helper}</span>
     </div>
   )

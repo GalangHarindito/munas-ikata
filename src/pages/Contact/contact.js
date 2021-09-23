@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./style.css";
 import * as image from "../../utils/image";
 import ContactUs from "../../component/form/contactUs/ContactUs";
+import StickySponsor from "../../component/stickySponsor/StickySponsor";
 
 export default function Contact() {
   const contactPerson = [
@@ -36,6 +37,8 @@ export default function Contact() {
   };
 
   return (
+    <>
+    <StickySponsor />
     <section className='contact'>
       <div className='header'>
         <img src={image.campusCrop} alt='img-campus' />
@@ -56,5 +59,6 @@ export default function Contact() {
         </div>
       </div>
     </section>
+    </>
   );
 }

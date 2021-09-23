@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import munas from "../../assets/img-munas-3.png";
 import { Link, useLocation } from "react-router-dom";
+import * as image from '../../utils/image';
 
 export default function Header() {
   const location = useLocation();
@@ -30,10 +30,10 @@ export default function Header() {
 
   return (
     <header>
-      <nav className={navbar ? "scroll_color" : "no-scroll"}>
-        <div className='nav-container'>
-          <img src={munas} alt='munas-logo' />
-          <h4>MUNAS IKATA 2021</h4>
+      <nav >
+        <div className={`${navbar ? "scroll_color" : "no-scroll"}`} >
+         <div className='nav-container'>
+          <img src={image.munas3} alt='munas-logo' />
         </div>
         <div className={`bar-menu ${menuBar? 'change' : ''}`} onClick={() => menuButton()}>
           <div className='bar1'></div>
@@ -56,6 +56,8 @@ export default function Header() {
             </li>
           </ul>
         </div>
+        </div>
+
       </nav>
     </header>
   );

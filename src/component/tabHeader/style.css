@@ -10,12 +10,19 @@
   align-self: center;
 }
 
-.item {
+.tabHeader > .item {
   justify-self: center;
+  display: block;
   align-self: center;
   padding: 1rem 1rem 0.4rem 1rem;
+  border-radius: 0;
+  box-shadow: none;
   width: 10rem;
   cursor: pointer;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .item p{
@@ -38,6 +45,38 @@ p{
 .item p:hover{
   font-weight: bold;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .item p{
+    font-size: 1rem;
+  }
+
+  .item {
+    padding: 0rem 1rem 0rem 1rem;
+    width: 8rem;
+  }
+
+  .tabHeader {
+    margin: 0 auto;
+  }
+
+  .itemActive {
+    border-bottom: 0.1rem solid var(--primary-color);
+    color: #0000;
+  }
+
+  .itemActive p{
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tabHeader {
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 700px) {
   /*.item p{
@@ -63,36 +102,5 @@ p{
   }*/
   .tabHeader {
     display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .tabHeader {
-    display: none;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  .item p{
-    font-size: 1rem;
-  }
-
-  .item {
-    padding: 0rem 1rem 0rem 1rem;
-    width: 8rem;
-  }
-
-  .tabHeader {
-    margin: 0 auto;
-  }
-
-  .itemActive {
-    border-bottom: 0.1rem solid var(--primary-color);
-    color: #0000;
-  }
-
-  .itemActive p{
-    font-weight: 600;
   }
 }

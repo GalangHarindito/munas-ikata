@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import * as image from "../../utils/image";
 import Tabs from "../../component/tabs/Tabs";
@@ -10,8 +10,11 @@ import Gathering from '../../component/fragment/gathering/Gathering';
 import Competition from '../../component/fragment/competition/Competition';
 import Workshop from '../../component/fragment/workshop/Workhop';
 import DropDown from '../../component/elements/Dropdown/DropDown';
+import StickySponsor from "../../component/stickySponsor/StickySponsor";
+import DPT from "../../component/DPT/DPT";
 
 export default function Event() {
+  const[dpt] = useState(true)
 
   const onbeforeunload = () => {
     window.scrollTo(0, 0);
@@ -34,6 +37,8 @@ export default function Event() {
   }
 
   return (
+    <>
+    <StickySponsor />
     <section>
       <div className='header'>
         <img src={image.campusCrop} alt='img-campus' />
@@ -47,7 +52,13 @@ export default function Event() {
         
         <Content />
       </div>
+      <div className='pendaftaran' style={{display: dpt? 'block' : 'none'}}>
+        <div className='container'>
+          <DPT />
+        </div>
+        </div>
     </section>
+    </>
   )
 }
 

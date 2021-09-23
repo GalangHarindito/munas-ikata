@@ -1,17 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
 import * as image from "../../utils/image";
 import * as text from "../../component/text/text";
+import StickySponsor from "../../component/stickySponsor/StickySponsor";
+import DPT from "../../component/DPT/DPT";
+import Profile from "../../component/profile/Profile";
 
 export default function About() {
+  const[dpt] = useState(false)
+  const [ontime]   = useState(false);
   return (
+    <>
+    <StickySponsor />
     <section className='about'>
       <div className='header'>
         <img src={image.campusCrop} alt='img-campus' />
       </div>
       <div className='container' id='munas'>
-        <section className='title-event' style={{ fontSize: "2rem" }}>
-          <h2>Apa itu MUNAS IKATA ?</h2>
+        <section className='title' style={{ fontSize: "2rem" }}>
+          <h3>Apa itu MUNAS IKATA ?</h3>
         </section>
         <section className='content-munas'>
           <div className='question'>
@@ -30,6 +37,20 @@ export default function About() {
           <h3>VIVA TAMBANG MANTAP SKALIII !!!</h3>
         </section>
       </div>
+      <div className='calon-detail' style={{display: ontime? 'block' : 'none'}}>
+        <div className='container'>
+        <section >
+          <h3 style={{ fontWeight: "600" }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
+        </section>
+          <Profile />
+        </div>
+        </div>
+      <div className='pendaftaran' style={{display: dpt? 'block' : 'none'}}>
+        <div className='container'>
+          <DPT />
+        </div>
+        </div>
     </section>
+    </>
   );
 }

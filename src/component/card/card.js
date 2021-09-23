@@ -77,7 +77,7 @@ export default function Card(props) {
                     volutpat velit bibendum.
                   </p>
                   <br />
-                  <Link style={{ color: "#000" }}>
+                  <Link to={elem.path} style={{ color: "#000" }}>
                     Lihat Detail
                   </Link>
                 </section>

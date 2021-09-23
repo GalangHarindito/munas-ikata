@@ -1,0 +1,48 @@
+.daftar-pemilih {
+  padding: 2rem;
+  background-color: #EAEAEA;
+  text-align: center;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.daftar-pemilih > div{
+  margin-bottom: 3rem;
+}
+
+.daftar-pemilih > div > h4 {
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.daftar-pemilih > a {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #FFF;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .daftar-pemilih > div > h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .daftar-pemilih > a {
+    font-size: 0.7rem;
+    padding: 0.6rem;
+  }
+
+  .daftar-pemilih > div{
+    margin-bottom: 2rem;
+  }
+}

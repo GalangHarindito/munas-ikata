@@ -9,3 +9,7 @@ export const sponsor2 = imgSpon2;
 export const sponsor3 = imgSpon3;
 export const Sponsor4 = imgSpon4;
 export const Sponsor5 = imgSpon5;
+
+export const imgSponsor = [
+  sponsor1, sponsor2, sponsor3, Sponsor4, Sponsor5,
+]

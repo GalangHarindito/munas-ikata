@@ -17,6 +17,7 @@ export default function DropDown(props) {
   };
 
   activeIndex = (activeIndex>-1) ? activeIndex : 0;
+  console.log(activeIndex)
   return(
     <Select
         options={navItems}
