@@ -1,7 +1,6 @@
-.event {
-  padding: 2rem 3rem;
-  margin: 0 10rem 2rem 10rem;
-  height: 50rem;
+.golf {
+  padding: 2rem 2rem;
+  margin: 0 6rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,13 +13,13 @@ h1 {
 
 
 @media screen and (max-width: 700px) {
-  .event {
+  .golf {
     padding: 1rem 1rem;
     margin: 0 0;
     height: 100vw;
   }
 
-  .event img{
+  .golf img{
     width: 20rem;
   }
 }

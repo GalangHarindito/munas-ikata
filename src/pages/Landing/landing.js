@@ -4,6 +4,7 @@ import Card from "../../component/card/card";
 import Sponsor from "../../component/sponsor/Sponsor";
 //import video1 from "../../assets/vid-ikata-1.mp4";
 import video2 from "../../assets/vid-ikata-2.mp4";
+//import video3 from "../../assets/IMG_38528554.MOV"
 import * as image from "../../utils/image";
 import { ketua } from "../../utils/image";
 import { Link } from "react-router-dom";
@@ -15,7 +16,7 @@ import DPT from "../../component/DPT/DPT";
 
 export default function Landing() {
   const [ontime]   = useState(false);
-  const [dpt] = useState(false)
+  const [dpt] = useState(true)
   console.log(ontime)
   const cardEvent = [
     {
@@ -192,12 +193,7 @@ export default function Landing() {
                   Desember 2021
                 </h3>
                 <p>
-                  Regenerasi roda organisasi perlu dilakukan demi berjalannya
-                  program kerja yang berkelanjutan, untuk itu Pengurus pusat
-                  organisasi Ikatan Alumni Teknik Pertambangan UPN veteran
-                  Yogyakarta periode 2017-2021 akan menggelar Musyawarah
-                  Nasional Ikata yang ke-6 di Yogyakarta pada bulan Desember
-                  2021.
+                Selamat datang di official website Musyawarah Nasional Ikatan Alumni Teknik Pertambangan (Munas Ikata) UPN Veteran Yogyakarta yang ke-6 tahun 2021. Website ini dibuat sebagai sarana untuk memberikan beragam informasi terkait rangkaian kegiatan Munas Ikata ke-6 tahun 2021. Kami dari panitia pelaksana secara aktif terus berinovasi dalam pelaksanaan Munas Ikata yang akan di laksanakan secara hybrid (daring dan luring). Website ini juga nantinya akan menjadi sarana e-voting untuk pemilihan ketua Ikata periode selanjutnya. Mari bersama sukseskan Musyawarah Nasional Ikatan Alumni Teknik Pertambangan Upn Veteran Yogyakarta ke-6, di Yogyakarta pada bulan Desember 2021.
                 </p>
                 <Link to='/tentangMunas'>Tentang MUNAS IKATA</Link>
               </div>
@@ -226,6 +222,11 @@ export default function Landing() {
             <img src={president} alt='img-president' />
           </div>*/}
           </section>
+        </div>
+        <div className='pendaftaran' style={{display: dpt? 'block' : 'none'}}>
+          <div className='container'>
+            <DPT />
+          </div>
         </div>
         <div className='sponsorship'>
           <div className='container'>

@@ -61,7 +61,7 @@ width: 100%;
 
 .active > a{
   border-bottom: 0.2rem solid var(--primary-color);
-  color: #000000!important;
+  color: var(--primary-color)!important;
 }
 
 

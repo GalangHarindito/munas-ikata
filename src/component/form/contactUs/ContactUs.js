@@ -70,30 +70,33 @@ export default function ContactUs() {
         {({ errors, touched }) => (
           <Form className='formContact'>
             <section>
-              <Field name='username' placeholder='Nama' />
+              <label>Nama</label>
+              <Field name='username' />
               {touched.username && errors.username && (
                 <div className='validation'>{errors.username}</div>
               )}
             </section>
             <section>
-              <Field name='email' placeholder='Email' />
+            <label>Email</label>
+              <Field name='email' />
               {touched.email && errors.email && (
                 <div className='validation'>{errors.email}</div>
               )}
             </section>
             <section>
-              <Field name='title' placeholder='Judul Pesan' />
+            <label>Judul Pesan</label>
+              <Field name='title' />
               {touched.title && errors.title && (
                 <div className='validation'>{errors.title}</div>
               )}
             </section>
             <section>
+            <label>Pesan</label>
               <Field
                 name='message'
                 as='textarea'
                 rows='10'
                 cols='80'
-                placeholder='Pesan'
               />
               {touched.message && errors.message && (
                 <div className='validation'>{errors.message}</div>

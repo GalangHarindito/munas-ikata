@@ -14,7 +14,7 @@ import StickySponsor from "../../component/stickySponsor/StickySponsor";
 import DPT from "../../component/DPT/DPT";
 
 export default function Event() {
-  const[dpt] = useState(true)
+  const[dpt] = useState(false)
 
   const onbeforeunload = () => {
     window.scrollTo(0, 0);
@@ -36,11 +36,13 @@ export default function Event() {
     tabsName:'tab'
   }
 
+
+
   return (
     <>
     <StickySponsor />
     <section>
-      <div className='header'>
+      <div className='header-event'>
         <img src={image.campusCrop} alt='img-campus' />
       </div>
       <div className='event-body'>
@@ -65,21 +67,46 @@ export default function Event() {
 function Content() {
   const { search } = useLocation();
   const { tab } = queryString.parse(search.replace('?', ''));
+  const golf = [
+  //  {
+  //  header: 'IKATA GOLF',
+  //  description: 'IKATA GOLF adala sebuah event rangkaian MUNAS IKATA 2021 yang mempertemukan anggota IKATA yang mempunyai hobi golf.',
+  //  tanggal: '17 Desember 2021',
+  //  waktu: '09:00 WIB',
+  //  tempat: 'Yogyakarta',
+  //  pendaftaran: '1 Oktober 2021 - 10 Desember 2021',
+  //  register: 'https://www.hyatt.com/en-US/hotel/indonesia/hyatt-regency-yogyakarta/yogya?src=nplk-yogya-lclb-regency-golf',
+  //  poster: image.comingSoon,
+  //  contactPerson: 'Wawan Sariawan - 0813455889977'
+  //},
+  //{
+  //  header: 'IKATA GOLF',
+  //  description: 'IKATA GOLF adala sebuah event rangkaian MUNAS IKATA 2021 yang mempertemukan anggota IKATA yang mempunyai hobi golf.',
+  //  tanggal: '17 Desember 2021',
+  //  waktu: '09:00 WIB',
+  //  tempat: 'Yogyakarta',
+  //  pendaftaran: '1 Oktober 2021 - 10 Desember 2021',
+  //  register: 'https://www.hyatt.com/en-US/hotel/indonesia/hyatt-regency-yogyakarta/yogya?src=nplk-yogya-lclb-regency-golf',
+  //  poster: image.comingSoon,
+  //  contactPerson: 'Wawan Sariawan - 0813455889977'
+  //}
+]
 
+ console.log(tab)
   if(tab === 'golf'){
-    return <Golf />
+    return <Golf data={golf} />
   }
-  if(tab === 'seminar/webinar'){
-    return <Seminar />
+  if(tab === 'seminar / webinar'){
+    return <Seminar data={golf} />
   }
   if(tab === 'gathering'){
-    return <Gathering />
+    return <Gathering data={golf}/>
   }
   if(tab === 'competition'){
-    return <Competition />
+    return <Competition data={golf}/>
   }
   if(tab === 'workshop'){
-    return <Workshop />
+    return <Workshop data={golf}/>
   }
-  return <Golf />;
+  return <Golf data={golf} />;
 }

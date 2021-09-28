@@ -3,13 +3,15 @@ import imgSpon2 from '../assets/sponsor/img-spon2.jpeg';
 import imgSpon3 from '../assets/sponsor/img-spon3.jpeg';
 import imgSpon4 from '../assets/sponsor/img-spon4.jpeg';
 import imgSpon5 from '../assets/sponsor/IMG-sponsor-Batu.png';
+import imgSpon6 from '../assets/sponsor/Kelixindo Kreasitama.png';
 
 export const sponsor1 = imgSpon1;
 export const sponsor2 = imgSpon2;
 export const sponsor3 = imgSpon3;
 export const Sponsor4 = imgSpon4;
 export const Sponsor5 = imgSpon5;
+export const Sponsor6 = imgSpon6;
 
 export const imgSponsor = [
-  sponsor1, sponsor2, sponsor3, Sponsor4, Sponsor5,
+  sponsor1, sponsor2, sponsor3, Sponsor4, Sponsor5, Sponsor6
 ]

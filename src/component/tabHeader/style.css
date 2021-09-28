@@ -34,7 +34,7 @@
   color: #0000;
 }
 .itemActive p{
-  color: black;
+  color: var(--primary-color);
   font-weight: bold;
 }
 

@@ -7,10 +7,10 @@ import imgCompetition from "../assets/Landing Page-winner 1.svg";
 import imgGathering from "../assets/Landing Page-group 1.svg";
 import imgWorkshop from "../assets/Landing Page-workshop 1.svg";
 import imgSeminar from "../assets/Landing Page-seminar 1.svg"
-import imgCampus from "../assets/bg-upn.jpg";
+import imgCampus from "../assets/bg-upn.svg";
 import imgCampusCrop from "../assets/bg-upn-crop.jpg";
-import imgQuestion from "../assets/img-question.png";
-import imgEvoting from "../assets/img-evoting2.png";
+import imgQuestion from "../assets/img-question.svg";
+import imgEvoting from "../assets/img-evoting2.svg";
 import imgMunas3 from "../assets/img-munas-3.png";
 import imgCM from "../assets/img-coming-soon.png";
 import ketum1 from "../assets/Ketua Ikata/img-1-alino.jpeg";
@@ -42,9 +42,9 @@ export const munas4 = imgMunas4;
 export const icArrow = arrow;
 export const ketua1 = ketum1
 export const ketua = [
-  { image: ketum1, angkatan:'', name:'Alino Budi Raharjo', periode:'2012-2016',},
-  { image: ketum2, angkatan:'', name:'Farida Zed', periode:'2012-2016',},
-  { image: ketum3, angkatan:'', name:'Setyo Sardjono', periode:'2012-2016',},
-  { image: ketum4, angkatan:'', name:'Priyadi', periode:'2012-2016',},
+  { image: ketum1, angkatan:'', name:'Alino Budi Raharjo', periode:'2000-2005',},
+  { image: ketum2, angkatan:'', name:'Farida Zed', periode:'2005-2008',},
+  { image: ketum3, angkatan:'', name:'Setyo Sardjono', periode:'2008- 2013',},
+  { image: ketum4, angkatan:'', name:'Priyadi', periode:'2013 - 2017',},
   { image: ketum5, angkatan:'', name:'Joko Kus Sulistyoko', periode:'2017-2021',},
 ];

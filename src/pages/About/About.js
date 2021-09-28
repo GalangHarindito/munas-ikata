@@ -7,18 +7,18 @@ import DPT from "../../component/DPT/DPT";
 import Profile from "../../component/profile/Profile";
 
 export default function About() {
-  const[dpt] = useState(false)
+  const[dpt] = useState(true)
   const [ontime]   = useState(false);
   return (
     <>
     <StickySponsor />
     <section className='about'>
-      <div className='header'>
+      {/*<div className='header'>
         <img src={image.campusCrop} alt='img-campus' />
-      </div>
+      </div>*/}
       <div className='container' id='munas'>
         <section className='title' style={{ fontSize: "2rem" }}>
-          <h3>Apa itu MUNAS IKATA ?</h3>
+        
         </section>
         <section className='content-munas'>
           <div className='question'>

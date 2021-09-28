@@ -1,20 +1,46 @@
+.header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-
-.header img {
+.header > img {
   width: 100%;
   height: 100%;
-  border-bottom-right-radius: 6rem;
-  border-bottom-left-radius: 6rem;
+
+}
+
+.contact > div:last-child{
+  position: relative;
 }
 
 .contentBody {
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr; 
-  gap: 4rem;
-  width: 100%; 
-  height: 100%; 
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  padding: 1rem 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -110%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.contentBody2{
+  padding-right: 2rem;
 }
 
 .body {
@@ -37,13 +63,25 @@
 
 .contentBody div h3{
   font-size: 1.5rem;
-  margin-bottom: 2rem;
   text-align: left;
+  padding: 1rem 1rem 0rem 2rem ;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contentBody2 > h3 {
+  color: #000!important;
+  padding: 1rem 1rem 0rem 0rem!important;
 }
 
 .contactPerson h3{
   font-size: 1.1rem;
-  margin-bottom: 0.4rem;
+  
+}
+
+.contentBody3 > h3{
+  background-color: #68AE29;
+  
 }
 
 .contactPerson .person1 p, 
@@ -52,157 +90,89 @@
   font-size: 1.2rem!important ;
  font-weight: normal!important;
  letter-spacing: 0.05rem;
+ color: #fff;
 }
 
-.contactPerson .person1, 
+/*.contactPerson .person1, 
 .contactPerson .person2 {
  margin-bottom: 1rem;
-}
+}*/
 
 .contactPerson span  {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 0.3rem;
-}
-
-.contactPerson span i{
-  font-size: 1rem;
-  margin-right: 0.5rem;
 }
 
 .person1, .person2, .person3 {
   min-width: 20rem ;
-  background-color: #ffff;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
+
+.person1 > span > img, .person2 > span > img, .person3 > span > img{
+  width: 1.5rem;
+  padding-right: 1rem;
+}
+
+.person1 > span > img, .person2 > span > img, .person3 > span {
+  padding: 0.5rem;
+}
+
+
+.person1{
+ background-color: #68AE29;
+ padding: 0rem 2rem 2rem 2rem;
+}
+
+.person2{
+  background-color: #589423;
+  padding: 2rem;
+ }
+
+.person3{
+  background-color: #233810;
+  padding: 2rem;
+}
+
+.person3 > h3{
+  padding: 0rem!important;
+}
+ 
 
 small {
   color:red; 
   font-weight: 500; 
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .contentBody2 {
   width: 35rem;
 }
 
-@media screen and (max-width: 700px) {
-  .body {
-    padding: 1rem 1rem 1rem 1rem;
+
+@media screen and (max-width: 1500px) {
+
+  .header{
+
+    grid-template-rows: 1fr 0.5fr;
+
   }
-  .header img {
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+  
+  
   }
-  .contentBody {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .body h2 {
-    font-size: 1.5rem;
-    margin: 1rem 0rem;
-    margin-top: 0;
-    padding: 0 0 ;
-  }
-  .contactPerson .person1 p, 
-.contactPerson .person2 p, 
-.contactPerson .person3 p{
-  font-size: 0.85rem!important ;
-}
-.contactPerson h3{
-  font-size: 1rem;
-}
-
-small {
-  font-size: 0.7rem;
-}
-
-.contactPerson h3{
-  font-size: 0.85rem;
-  margin-bottom: 0.4rem;
-}
-
-.contentBody2 {
-  width: 100%;
-}
-.contentBody div h3 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-
-}
-}
-
-@media screen and (max-width: 900px) {
-  .body {
-    padding: 1rem 1rem 1rem 1rem;
-  }
-  .header img {
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-  }
-  .contentBody {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .body h2 {
-    font-size: 1.5rem;
-    margin: 1rem 0rem;
-    margin-top: 0;
-    padding: 0 0 ;
-  }
-  .contactPerson .person1 p, 
-.contactPerson .person2 p, 
-.contactPerson .person3 p{
-  font-size: 0.85rem!important ;
-}
-.contactPerson h3{
-  font-size: 0.85rem;
-}
-
-small {
-  font-size: 0.7rem;
-}
-
-.contactPerson h3{
-  font-size: 0.85rem;
-  margin-bottom: 0.4rem;
-}
-
-.contentBody2 {
-  width: 100%;
-}
-.contentBody div h3 {
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
-
-}
-}
 
 @media screen and (max-width: 1200px) {
-  .body {
-    padding: 1rem 1.5rem 1rem 1.5rem;
+  .header{
+
+    grid-template-rows: 1fr 0.8fr;
+
   }
-
-
-
 .contentBody div h3 {
   font-size: 1rem;
-  margin-bottom: 1rem;
 
 }
 
 .contactPerson h3{
   font-size:1rem;
-  margin-bottom: 0.4rem;
 }
 
 .contactPerson h3{
@@ -229,21 +199,185 @@ small {
 }
 
 .contentBody {
-  grid-template-columns: 1fr 1fr; 
-  padding: 0 0 ;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  padding: 1rem ;
+  gap: 0rem;
+  
+}
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .header{
+    display: block;
+  }
+
+  .contact > div:last-child{
+    padding: 1rem;
+  }
+  .body {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .contentBody {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+    width: 100%;
+    grid-gap: 0rem;
+    gap: 0rem;
+  }
+
+  .contentBody2{
+    padding: 0rem;
+  }
+
+  .body h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    margin-top: 0;
+    padding: 0 0 ;
+  }
+  .contactPerson .person1 p, 
+.contactPerson .person2 p, 
+.contactPerson .person3 p{
+  font-size: 0.85rem!important ;
+}
+.contactPerson h3{
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+.contactPerson h3{
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
 }
 
 .contentBody2 {
   width: 100%;
 }
+.contentBody div h3 {
+  font-size: 1rem;
+}
+.person1{
+  padding: 0rem 0rem 1rem 0rem;
+ }
+ 
+ .person2{
+   padding: 1rem 0rem;
+  }
+ 
+ .person3{
+   padding: 1rem 0rem;
+ }
+ 
+ .person3 > h3{
+   padding: 0rem!important;
+ }
+
+ .person3 > h3{
+  padding: 1rem!important;
+}
+ 
 }
 
-@media screen and (max-width: 1500px) {
 
-.contentBody {
-  gap: 4rem;
+
+@media screen and (max-width: 700px) {
+  .header{
+    display: block;
+  }
+
+  .contact > div:last-child{
+    padding: 0.5rem;
+  }
+  .body {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .contentBody {
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+    position: relative!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    grid-gap: 0rem;
+    gap: 0rem;
+    transform: unset;
+
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
 }
 
+  .contentBody2{
+    padding: 0rem;
+  }
 
+  .body h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    margin-top: 0;
+    padding: 0 0 ;
+  }
+  .contactPerson .person1 p, 
+.contactPerson .person2 p, 
+.contactPerson .person3 p{
+  font-size: 0.85rem!important ;
+}
+.contactPerson h3{
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+.contactPerson h3{
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.contentBody2 {
+  width: 100%;
+}
+.contentBody div h3 {
+  font-size: 1rem;
+}
+.person1{
+  padding: 0rem 0rem 1rem 0rem;
+ }
+ 
+ .person2{
+   padding: 1rem 0rem;
+  }
+ 
+ .person3{
+   padding: 1rem 0rem;
+ }
+ 
+ .person3 > h3{
+   padding: 0rem!important;
+ }
+
+ .person3 > h3{
+  padding: 1rem!important;
+}
+ 
+  
 }

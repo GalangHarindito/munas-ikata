@@ -9,10 +9,11 @@ export default function CardCandidate() {
       { candidate.map((el, idx) => {
         return(
           <div key={idx} className='card-candidate'>
+            <div>
           <div className='label'>
             <p>{`${idx+1}`}</p>
           </div>
-          <div>
+          
             <img src={el.image} alt="" />
           </div>
           <div>
