@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import Card from "../../component/card/card";
 import Sponsor from "../../component/sponsor/Sponsor";
-//import video1 from "../../assets/vid-ikata-1.mp4";
-import video2 from "../../assets/vid-ikata-2.mp4";
-import video3 from "../../assets/vid-ikata-3.mp4"
+import video3 from "../../assets/IMG_38528554.MOV"
 import * as image from "../../utils/image";
 import { ketua } from "../../utils/image";
 import { Link } from "react-router-dom";
