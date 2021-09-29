@@ -214,9 +214,6 @@ small {
     display: block;
   }
 
-  .contact > div:last-child{
-    padding: 1rem;
-  }
   .body {
     padding: 1rem 1rem 1rem 1rem;
   }
@@ -301,7 +298,7 @@ small {
   }
 
   .contact > div:last-child{
-    padding: 0.5rem;
+    padding: 0rem;
   }
   .body {
     padding: 1rem 1rem 1rem 1rem;

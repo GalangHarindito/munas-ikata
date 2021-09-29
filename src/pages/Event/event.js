@@ -43,7 +43,7 @@ export default function Event() {
     <StickySponsor />
     <section>
       <div className='header-event'>
-        <img src={image.campusCrop} alt='img-campus' />
+        {/*<img src={image.campusCrop} alt='img-campus' />*/}
       </div>
       <div className='event-body'>
         <Tabs data= {data} />
@@ -92,7 +92,7 @@ function Content() {
   //}
 ]
 
- console.log(tab)
+
   if(tab === 'golf'){
     return <Golf data={golf} />
   }

@@ -130,9 +130,18 @@ width: 100%;
     width: 82%;
 
   }
+
+  .nav-menu li a {
+    margin-right: 0.7rem;
+  }
   
 }
 
+/*@media screen and (min-width: 901px), (max-width: 1200px) {
+  .nav-menu li a {
+    margin-right: 0.4rem;
+  }
+}*/
 @media screen and (max-width: 900px) {
 
   header {

@@ -3,7 +3,6 @@ import "./style.css";
 
 export default function Text(props) {
 const { className, input, inputProps, label, meta, helper, onClickIcon } = props;
-console.log(input)
 // const classes =   [
 //    textField,
 //    !!input.value || styles.empty,
@@ -12,7 +11,7 @@ console.log(input)
 //    className
 //  ].filter(Boolean).join(' ');
 
-  console.log(meta)
+
 
   return (
        <div >

@@ -33,10 +33,7 @@ export default function Card(props) {
                 <section className='card--hover'>
                   <h2>{elem.title}</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam at est orci. Nam molestie pellentesque mi nec
-                    lacinia. Cras volutpat arcu sit amet elit sodales, nec
-                    volutpat velit bibendum.
+                    {elem.desc}
                   </p>
                   <Link className='link' style={{ color: "#000" }} to={elem.path}>
                     Lihat Detail
@@ -50,10 +47,10 @@ export default function Card(props) {
       </div>
 
       <Carousel
-        centerMode
-        centerSlidePercentage= {width}
+        //centerMode
+        //centerSlidePercentage= {width}
         swipeable
-        autoPlay={false}
+        //autoPlay={false}
         showArrows={false}
 
       >
@@ -71,10 +68,7 @@ export default function Card(props) {
                 <section className='card--hover'>
                   <h2>{elem.title}</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam at est orci. Nam molestie pellentesque mi nec
-                    lacinia. Cras volutpat arcu sit amet elit sodales, nec
-                    volutpat velit bibendum.
+                    {elem.desc}
                   </p>
                   <br />
                   <Link to={elem.path} style={{ color: "#000" }}>

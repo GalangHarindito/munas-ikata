@@ -11,13 +11,11 @@ export default function DropDown(props) {
   const { tab } = queryString.parse(search.replace('?', ''));
   let activeIndex = navItems.findIndex(i => i.value === tab);
   const index = (idx) => {
-    console.log(idx)
     const newQuery = queryString.stringify({ [tabsName]: navItems[idx].value });
     history.push(`?${newQuery}`);
   };
 
   activeIndex = (activeIndex>-1) ? activeIndex : 0;
-  console.log(activeIndex)
   return(
     <Select
         options={navItems}

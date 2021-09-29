@@ -4,7 +4,7 @@ import Card from "../../component/card/card";
 import Sponsor from "../../component/sponsor/Sponsor";
 //import video1 from "../../assets/vid-ikata-1.mp4";
 import video2 from "../../assets/vid-ikata-2.mp4";
-//import video3 from "../../assets/IMG_38528554.MOV"
+import video3 from "../../assets/vid-ikata-3.mp4"
 import * as image from "../../utils/image";
 import { ketua } from "../../utils/image";
 import { Link } from "react-router-dom";
@@ -17,13 +17,14 @@ import DPT from "../../component/DPT/DPT";
 export default function Landing() {
   const [ontime]   = useState(false);
   const [dpt] = useState(true)
-  console.log(ontime)
+
   const cardEvent = [
     {
       image: image.vote,
       alt: "vote",
       title: "MUNAS IKATA",
       backgroundColor: "#dcf3fe",
+      desc: 'Merupakan acara inti dari dari acara MUNAS IKATA 2021. Sidang AD/ART hingga pemilihan Ketua IKATA 2021-2025',
       path: "/tentangMunas",
     },
     {
@@ -31,6 +32,7 @@ export default function Landing() {
       alt: "golf",
       title: "IKATA Golf Tournament",
       backgroundColor: "#38b6ff",
+      desc:'Acara yang mempertemukan para peng-hobi olahraga golf. Acara ini selalu diadakan tiap MUNAS IKATA.',
       path: "/events?tab=golf",
     },
     {
@@ -38,6 +40,7 @@ export default function Landing() {
       alt: "competition",
       title: "IKATA Competition",
       backgroundColor: "#737373",
+      desc:'Kompetisi untuk para kompetitor. Mulai dari Mobile legend hingga kompetisi sepeda virtual',
       path: "/events?tab=competition",
     },
     {
@@ -45,6 +48,7 @@ export default function Landing() {
       alt: "seminar",
       title: "IKATA National Seminar / Webinar",
       backgroundColor: "#dcf3fe",
+      desc:'Mulai dari tahun ini acara seminar akan diadakan berbasis online atau webinar, yang pasti tema yang up to date dan narasumber yang up to date.',
       path: "/events?tab=seminar/webinar",
     },
     {
@@ -52,6 +56,7 @@ export default function Landing() {
       alt: "workshop",
       title: "IKATA workshop",
       backgroundColor: "#dcf3fe",
+      desc:'Sama dengan seminar yang tahun ini sebagian besar diadakan seraca online. Workshop pun akan dilakukan secara online',
       path: "/events?tab=workshop",
     },
     {
@@ -59,6 +64,7 @@ export default function Landing() {
       alt: "gathering",
       title: "IKATA Gathering",
       backgroundColor: "#ffde59",
+      desc:'Acar kumpul-kumpul seluruh anggota IKATA, yang pasti tak terlupakan. Acara yang selalu dinanti oleh seluruh anggota IKATA.',
       path: "/events?tab=gathering",
     },
   ];
@@ -277,7 +283,7 @@ export default function Landing() {
                 <video
                   width='700'
                   height='395'
-                  src={video2}
+                  src={video3}
                   title='Ikata video player'
                   frameBorder='0'
                   allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -288,14 +294,10 @@ export default function Landing() {
 
               <div>
                 <h3>MUNAS 6 IKATA </h3>
-                <p>
-                  Regenerasi roda organisasi perlu dilakukan demi berjalannya
-                  program kerja yang berkelanjutan, untuk itu Pengurus pusat
-                  organisasi Ikatan Alumni Teknik Pertambangan UPN veteran
-                  Yogyakarta periode 2017-2021 akan menggelar Musyawarah
-                  Nasional Ikata yang ke-6 di Yogyakarta pada bulan Desember
-                  2021.
-                </p>
+                <h3>
+                  Mari Sukseskan Munas IKATA
+                </h3>
+                <br />
                 <a href='https://evoting.munasikataupn.com'>Daftar Menjadi DPT</a>
               </div>
             </div>
