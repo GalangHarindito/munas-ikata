@@ -9,9 +9,11 @@ export default function DropDown(props) {
   const history = useHistory();
   const { search } = useLocation();
   const { tab } = queryString.parse(search.replace('?', ''));
-  let activeIndex = navItems.findIndex(i => i.value === tab);
+  const { profile } = queryString.parse(search.replace('?', ''));
+  let activeIndex = navItems.findIndex(i => i.value === tab || i.value === profile);
   const index = (idx) => {
     const newQuery = queryString.stringify({ [tabsName]: navItems[idx].value });
+    console.log(idx)
     history.push(`?${newQuery}`);
   };
 

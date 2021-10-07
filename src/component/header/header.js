@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 import * as image from '../../utils/image';
+import axios from 'axios';
+import { Context } from '../../store';
 
 export default function Header() {
   const location = useLocation();
@@ -9,6 +11,42 @@ export default function Header() {
   const splitLocation = pathname.split("/");
   const [navbar, setNavbar] = useState(false);
   const [menuBar, setMenuBar] = useState(false);
+  const BASIC_URL = 'https://ikata.semoga.online/api/';
+  const [state, dispatch] = useContext(Context);
+
+  const getdataCandidate = () => {
+  
+
+  
+  
+    const options = {
+      method: 'GET',
+      url: `${BASIC_URL}candidate`,
+      headers: {  
+        Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YmY1NTY3OS0yZWQ1LTRmYTgtYjFjNS1jNjg4YjBiYmRlMGEiLCJpYXQiOjE2MzI5NzExNTIsImV4cCI6MTYzMzE0Mzk1Mn0.g_e6cg7P_hCT9YiBNmadzlZJaaUKD1NH-cs-MiIs25Y'
+      }
+    };
+
+    axios(options)
+    .then((res) => {
+      const { status, data } = res.data;
+
+      dispatch({type:'CANDIDATE', payload:data})
+
+    })
+    .catch(err => {
+      const { status, message } = err.response.data
+      //if(status === 401){
+      //  window.location.href = '/login'
+      //}
+      //const messageStatus = status > 401 && status <= 500 ? 'Sedang ada masalah, silahkan refresh halaman' : message;
+    });
+
+
+}
+useEffect(() => {
+getdataCandidate()
+},[])
 
   const changeBackground = () => {
     if (window.pageYOffset > 0) {
@@ -53,6 +91,9 @@ export default function Header() {
             </li>
             <li className={splitLocation[1] === "contactUs" ? "active" : ""}>
               <Link to='/contactUs'>Contact Us</Link>
+            </li>
+            <li className='login-button'>
+              <a href="https://evoting.munasikataupn.com">Login</a>
             </li>
           </ul>
         </div>

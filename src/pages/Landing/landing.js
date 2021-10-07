@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./style.css";
 import Card from "../../component/card/card";
 import Sponsor from "../../component/sponsor/Sponsor";
@@ -12,9 +12,12 @@ import { Carousel } from "react-responsive-carousel";
 import CardCandidate from "../../component/cardCandidate/cardCandidate";
 import DPT from "../../component/DPT/DPT";
 
+
 export default function Landing() {
-  const [ontime]   = useState(false);
+  const [ontime]   = useState(true);
   const [dpt] = useState(true)
+
+  
 
   const cardEvent = [
     {

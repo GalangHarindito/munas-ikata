@@ -1,20 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./style.css";
 import Tabs from "../tabs/Tabs";
 import { useLocation } from "react-router-dom";
 import queryString from 'querystring'; 
 import DetailProfile from "../fragment/detailProfile/DetailProfile";
 import DropDown from "../elements/Dropdown/DropDown";
+import { Context } from "../../store";
+import ContactUs from "../form/contactUs/ContactUs";
 
-export default function Profile() {
+export default function Profile(props) {
+  const { profile } = props;
   const data = {
-    navItems: [
-      { idx:0, name:'Candidate1', value:'Candidate1' }, 
-      { idx:1, name:'Candidate2', value:'Candidate2' }, 
-      { idx:2, name:'Candidate3', value:'Candidate3' }, 
-      { idx:3, name:'Candidate4', value:'Candidate4' }, 
-    ],
-    navValues: ['Candidate1', 'Candidate1', 'Candidate1', 'Candidate1', 'Candidate1'],
+    navItems: profile.map((el, idx) => { return {idx: idx, name: el.biodata.fullName, value: el.biodata.fullName.toLowerCase().split(' ').join('')} }),
+    navValues: profile.map((el) => { return el.biodata.fullName.toLowerCase().split(' ').join('')}),
     tabsName:'tab'
   }
 
@@ -22,13 +20,13 @@ export default function Profile() {
     <>
     <section>
       <div className='event-body'>
-        <Tabs data= {data} />
+        <Tabs data= {data} fullWidth={true} />
         <div className='drop-down'>
           <p>Profile :</p>
           <DropDown id='dropDown' data= {data} />
         </div>
         
-        <Content data={data} />
+        <Content data={profile} />
       </div>
     </section>
     </>
@@ -40,8 +38,18 @@ function Content(props) {
   const { search } = useLocation();
   const { tab } = queryString.parse(search.replace('?', ''));
 
-  if(tab === data.value){
-    return <DetailProfile />
+  for(let i in data ){
+    console.log(data[i].biodata.fullName.toLowerCase().split(' ').join('') === tab)
+    if(data[i].biodata.fullName.toLowerCase().split(' ').join('') === tab ){
+     
+      return <DetailProfile data={data[i]} />
+    }
   }
-  return <DetailProfile />;
+  //if( data.navValues.includes(candidate)){
+  //  return <ContactUs />
+  //}
+  //if( data.navValues.includes(candidate)){
+  //  return <DetailProfile />
+  //}
+  return <DetailProfile data={data[0]} />
 }

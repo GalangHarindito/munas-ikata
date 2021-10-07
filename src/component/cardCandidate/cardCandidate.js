@@ -1,26 +1,29 @@
-import React from "react";
-import { candidate } from "../../utils/candidate";
+import React, { useContext } from "react";
+//import { candidate } from "../../utils/candidate";
 import { Link } from "react-router-dom";
 import './style.css';
+import { Context } from "../../store";
 
 export default function CardCandidate() {
+  const [candidate] = useContext(Context);
+
   return(
     <section className='candidateCard'>
-      { candidate.map((el, idx) => {
+      { candidate.candidate.map((el, idx) => {
         return(
           <div key={idx} className='card-candidate'>
             <div>
           <div className='label'>
-            <p>{`${idx+1}`}</p>
+            <p>{el.biodata.number}</p>
           </div>
           
-            <img src={el.image} alt="" />
+            <div className='image-candidate' style={{backgroundImage:`url(${el.biodata.photo})`}}></div>
           </div>
           <div>
-            <p>{el.name}</p>
+            <p>{el.biodata.fullName}</p>
           </div>
           <div>
-            <Link to='/tentangMunas?tab=Candidate1'>Lihat Detail</Link>
+            <Link to={`/tentangMunas?candidate=${el.biodata.fullName}`}>Lihat Detail</Link>
           </div>
         </div>
         )

@@ -1,14 +1,22 @@
-import React, {useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import "./style.css";
 import * as image from "../../utils/image";
 import * as text from "../../component/text/text";
 import StickySponsor from "../../component/stickySponsor/StickySponsor";
 import DPT from "../../component/DPT/DPT";
 import Profile from "../../component/profile/Profile";
+import GetdataCandidate from "../../utils/fetch2";
+import { Context } from "../../store";
 
 export default function About() {
   const[dpt] = useState(true)
-  const [ontime]   = useState(false);
+  const [ontime]   = useState(true);
+  const [candidate] = useContext(Context);
+
+  //useEffect(() => {
+  //  GetdataCandidate()
+  //},[])
+
   return (
     <>
     <StickySponsor />
@@ -40,9 +48,9 @@ export default function About() {
       <div className='calon-detail' style={{display: ontime? 'block' : 'none'}}>
         <div className='container'>
         <section >
-          <h3 style={{ fontWeight: "600" }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
+          <h3 style={{ fontWeight: "500" }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
         </section>
-          <Profile />
+          <Profile profile={candidate.candidate} />
         </div>
         </div>
       <div className='pendaftaran' style={{display: dpt? 'block' : 'none'}}>

@@ -5,9 +5,12 @@ import DetailEvent from "../DetailEvent/DetailEvent";
 
 export default function Gathering(props) {
   const { data } = props;
+  if( !data )return  <div className='coming-soon'>
+  <img src={image.comingSoon} alt='img-coming-soon' />
+</div>
 
   return (
-    <section className='gathering'>
+    <section className='container'>
       {data.length >= 1 ? (
         <section>
           <img src={image.comingSoon} alt='img-coming-soon' />
@@ -16,7 +19,9 @@ export default function Gathering(props) {
           </section>
         </section>
       ) : (
+        <div className='coming-soon'>
         <img src={image.comingSoon} alt='img-coming-soon' />
+    </div>
       )}
     </section>
   );

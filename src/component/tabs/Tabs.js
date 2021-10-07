@@ -18,7 +18,7 @@ export default function Tabs(props) {
   activeIndex = (activeIndex>-1) ? activeIndex : 0;
 
   return (
-    <TabHeader activeIndex={parseInt(activeIndex)} navItems={navItems} onClick={onClick}/>
+    <TabHeader activeIndex={parseInt(activeIndex)} navItems={navItems} onClick={onClick} fullWidth={props.fullWidth}/>
   );
 
 }

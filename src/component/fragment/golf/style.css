@@ -1,9 +1,16 @@
 .golf {
   padding: 2rem 2rem;
   margin: 0 6rem 2rem;
+}
+
+.coming-soon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.coming-soon > img {
+  width: 50%;
 }
 
 h1 {
@@ -16,10 +23,10 @@ h1 {
   .golf {
     padding: 1rem 1rem;
     margin: 0 0;
-    height: 100vw;
+
   }
 
-  .golf img{
+  .con img{
     width: 20rem;
   }
 }

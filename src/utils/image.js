@@ -21,6 +21,8 @@ import ketum5 from "../assets/Ketua Ikata/img-5-joko.jpeg";
 import imgMunas2 from "../assets/img-munas-1.png";
 import arrow from "../assets/ic-arrow.svg";
 import imgMunas4 from "../assets/img-munas-1-3.svg";
+import imgGolf2 from "../assets/img-golf.jpg";
+import munasResize from "../assets/img-munas-resize.png";
 
 export const ikata = imgIkata;
 export const upn = imgUpn;
@@ -40,7 +42,9 @@ export const comingSoon = imgCM;
 export const munas3 = imgMunas2;
 export const munas4 = imgMunas4;
 export const icArrow = arrow;
-export const ketua1 = ketum1
+export const ketua1 = ketum1;
+export const golf2 = imgGolf2;
+export const munas5 = munasResize;
 export const ketua = [
   { image: ketum1, angkatan:'', name:'Alino Budi Raharjo', periode:'2000-2005',},
   { image: ketum2, angkatan:'', name:'Farida Zed', periode:'2005-2008',},

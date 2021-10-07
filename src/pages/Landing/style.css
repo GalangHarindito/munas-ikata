@@ -338,12 +338,18 @@ grid-template-areas:
 
 
 @media screen and (max-width: 1800px) {
+  .container {
+    margin: 0 4rem 2rem;
+  }
 
 }
 
 @media screen and (max-width: 1200px) {
 
- 
+  .container {
+    margin: 0 2rem 2rem;
+  }
+
 }
 
 @media screen and (max-width: 900px) {

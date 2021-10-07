@@ -10,12 +10,13 @@ import Footer from "./component/footer/footer";
 import Event from "./pages/Event/event";
 import Contact from "./pages/Contact/contact";
 import About from "./pages/About/About";
+import Store from "./store";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   return (
- 
+    <Store>
       <Router>
         <Header />
         <Switch>
@@ -26,6 +27,6 @@ export default function App() {
         </Switch>
         <Footer />
       </Router>
-
+      </Store>
   );
 }

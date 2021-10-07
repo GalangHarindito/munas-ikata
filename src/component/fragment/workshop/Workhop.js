@@ -6,8 +6,12 @@ import DetailEvent from "../DetailEvent/DetailEvent";
 export default function Workshop(props) {
   const { data } = props;
 
+  if( !data )return  <div className='coming-soon'>
+  <img src={image.comingSoon} alt='img-coming-soon' />
+</div>
+
   return (
-    <section className='workshop'>
+    <section className='container'>
       {data.length >= 1 ? (
         <section>
           <section className='content-workshop'>
@@ -15,7 +19,9 @@ export default function Workshop(props) {
           </section>
         </section>
       ) : (
+        <div className='coming-soon'>
         <img src={image.comingSoon} alt='img-coming-soon' />
+    </div>
       )}
     </section>
   );

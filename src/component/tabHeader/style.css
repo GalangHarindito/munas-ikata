@@ -5,6 +5,9 @@
   margin: 0 auto;
 }
 
+
+
+
 .item {
   justify-self: center;
   align-self: center;
@@ -30,12 +33,11 @@
 }
 
 .itemActive {
-  border-bottom: 0.2rem solid var(--primary-color);
+  border-bottom: 0.1rem solid var(--primary-color);
   color: #0000;
 }
 .itemActive p{
   color: var(--primary-color);
-  font-weight: bold;
 }
 
 p{
@@ -46,16 +48,20 @@ p{
   font-weight: bold;
 }
 
+.fullWidth > .item {
+ 
+  width: auto;
+  
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .item p{
     font-size: 1rem;
   }
 
-  .item {
-    padding: 0rem 1rem 0rem 1rem;
-    width: 8rem;
-  }
+
 
   .tabHeader {
     margin: 0 auto;
@@ -67,8 +73,15 @@ p{
   }
 
   .itemActive p{
-    font-weight: 600;
+    font-size: 0.865rem;
   }
+
+  .fullWidth > .item {
+ 
+    width: 10rem;
+    
+  }
+
 }
 
 @media screen and (max-width: 900px) {

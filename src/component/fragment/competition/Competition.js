@@ -5,8 +5,12 @@ import DetailEvent from "../DetailEvent/DetailEvent";
 
 export default function Competition(props) {
   const { data }= props;
+
+  if( !data )return  <div className='coming-soon'>
+  <img src={image.comingSoon} alt='img-coming-soon' />
+</div>
   return(
-    <section className='competition'>
+    <section className='container'>
       {data.length >= 1 ? (
         <section>
           <section className='content-competition'>
@@ -14,7 +18,9 @@ export default function Competition(props) {
           </section>
         </section>
       ) : (
-        <img src={image.comingSoon} alt='img-coming-soon' />
+        <div className='coming-soon'>
+            <img src={image.comingSoon} alt='img-coming-soon' />
+        </div>
       )}
     </section>
   )
