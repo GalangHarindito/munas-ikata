@@ -1,0 +1,66 @@
+.daftar-calon {
+  padding: 2rem;
+  background-color: #EAEAEA;
+  text-align: center;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.daftar-calon > div{
+  margin-bottom: 3rem;
+}
+
+.daftar-calon > div > h4 {
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.daftar-calon > a {
+  text-decoration: none;
+  padding: 1rem 5rem;
+  background-color: #18328C;
+  color: #FFF;
+  font-size: 1.25rem;
+  font-weight: Bold;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .daftar-calon > div > h4 {
+    font-size: 0.85rem;
+    line-height: 1rem;
+  }
+
+  .daftar-calon > a {
+    font-size: 0.8rem;
+    padding: 0.7rem 0.2rem;
+  }
+
+  .daftar-calon > div{
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .daftar-calon > div > h4 {
+    font-size: 0.85rem;
+    line-height: 1rem;
+  }
+
+  .daftar-calon > a {
+    font-size: 0.8rem;
+    padding: 0.7rem 0.22rem;
+  }
+
+  .daftar-calon > div{
+    margin-bottom: 2rem;
+  }
+}

@@ -5,8 +5,6 @@ import * as image from '../../../utils/image';
 export default function DetailEvent(props) {
   const { data } = props;
 
- console.log(data)
-
   return (
     <section className='detail-event'>
       {data.map((el,idx) => {

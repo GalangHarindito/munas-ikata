@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import "./style.css";
 import Card from "../../component/card/card";
 import Sponsor from "../../component/sponsor/Sponsor";
-import video3 from "../../assets/IMG_38528554.MOV"
+import video3 from "../../assets/video6.mp4"
 import * as image from "../../utils/image";
 import { ketua } from "../../utils/image";
 import { Link } from "react-router-dom";
@@ -11,11 +11,13 @@ import StickySponsor from "../../component/stickySponsor/StickySponsor";
 import { Carousel } from "react-responsive-carousel";
 import CardCandidate from "../../component/cardCandidate/cardCandidate";
 import DPT from "../../component/DPT/DPT";
+import Balon from "../../component/Balon/Balon";
 
 
 export default function Landing() {
-  const [ontime]   = useState(true);
+  const [ontime]   = useState(false);
   const [dpt] = useState(true)
+  const [calon] = useState(true)
 
   
 
@@ -235,6 +237,7 @@ export default function Landing() {
             <DPT />
           </div>
         </div>
+
         <div className='sponsorship'>
           <div className='container'>
             <section className='title' style={{ fontSize: "2rem" }}>
@@ -302,6 +305,11 @@ export default function Landing() {
                 <a href='https://evoting.munasikataupn.com'>Daftar Menjadi DPT</a>
               </div>
             </div>
+          </div>
+        </div>
+        <div className='pendaftaran' style={{display: calon? 'block' : 'none'}}>
+          <div className='container'>
+            <Balon />
           </div>
         </div>
 

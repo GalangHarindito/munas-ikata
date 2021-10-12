@@ -24,6 +24,7 @@ import imgMunas4 from "../assets/img-munas-1-3.svg";
 import imgGolf2 from "../assets/img-golf.jpg";
 import munasResize from "../assets/img-munas-resize.png";
 
+
 export const ikata = imgIkata;
 export const upn = imgUpn;
 export const munas1 = imgMunas1;

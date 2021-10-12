@@ -68,28 +68,28 @@ function Content() {
   const { search } = useLocation();
   const { tab } = queryString.parse(search.replace('?', ''));
   const golf = [
-    {
-    header: 'IKATA GOLF',
-    description: 'IKATA GOLF adala sebuah event rangkaian MUNAS IKATA 2021 yang mempertemukan anggota IKATA yang mempunyai hobi golf.',
-    tanggal: '17 Desember 2021',
-    waktu: '09:00 WIB',
-    tempat: 'Yogyakarta',
-    pendaftaran: '1 Oktober 2021 - 10 Desember 2021',
-    register: 'https://www.hyatt.com/en-US/hotel/indonesia/hyatt-regency-yogyakarta/yogya?src=nplk-yogya-lclb-regency-golf',
-    poster: image.golf2,
-    contactPerson: 'Wawan Sariawan - 0813455889977'
-  },
-  {
-    header: 'IKATA GOLF',
-    description: 'IKATA GOLF adala sebuah event rangkaian MUNAS IKATA 2021 yang mempertemukan anggota IKATA yang mempunyai hobi golf.',
-    tanggal: '17 Desember 2021',
-    waktu: '09:00 WIB',
-    tempat: 'Yogyakarta',
-    pendaftaran: '1 Oktober 2021 - 10 Desember 2021',
-    register: '',
-    poster: '',
-    contactPerson: 'Wawan Sariawan - 0813455889977'
-  }
+  //  {
+  //  header: 'IKATA GOLF',
+  //  description: 'IKATA GOLF adala sebuah event rangkaian MUNAS IKATA 2021 yang mempertemukan anggota IKATA yang mempunyai hobi golf.',
+  //  tanggal: '17 Desember 2021',
+  //  waktu: '09:00 WIB',
+  //  tempat: 'Yogyakarta',
+  //  pendaftaran: '1 Oktober 2021 - 10 Desember 2021',
+  //  register: 'https://www.hyatt.com/en-US/hotel/indonesia/hyatt-regency-yogyakarta/yogya?src=nplk-yogya-lclb-regency-golf',
+  //  poster: image.golf2,
+  //  contactPerson: 'Wawan Sariawan - 0813455889977'
+  //},
+  //{
+  //  header: 'IKATA GOLF',
+  //  description: 'IKATA GOLF adala sebuah event rangkaian MUNAS IKATA 2021 yang mempertemukan anggota IKATA yang mempunyai hobi golf.',
+  //  tanggal: '17 Desember 2021',
+  //  waktu: '09:00 WIB',
+  //  tempat: 'Yogyakarta',
+  //  pendaftaran: '1 Oktober 2021 - 10 Desember 2021',
+  //  register: '',
+  //  poster: '',
+  //  contactPerson: 'Wawan Sariawan - 0813455889977'
+  //}
 ]
 
 

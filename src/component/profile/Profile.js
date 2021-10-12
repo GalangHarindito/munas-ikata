@@ -39,7 +39,6 @@ function Content(props) {
   const { tab } = queryString.parse(search.replace('?', ''));
 
   for(let i in data ){
-    console.log(data[i].biodata.fullName.toLowerCase().split(' ').join('') === tab)
     if(data[i].biodata.fullName.toLowerCase().split(' ').join('') === tab ){
      
       return <DetailProfile data={data[i]} />

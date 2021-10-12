@@ -13,7 +13,6 @@ export default function DropDown(props) {
   let activeIndex = navItems.findIndex(i => i.value === tab || i.value === profile);
   const index = (idx) => {
     const newQuery = queryString.stringify({ [tabsName]: navItems[idx].value });
-    console.log(idx)
     history.push(`?${newQuery}`);
   };
 
