@@ -64,3 +64,12 @@
     margin-bottom: 2rem;
   }
 }
+
+
+@media screen and (max-width: 365px) {
+
+  .daftar-calon > a {
+    font-size: 0.6rem;
+    padding: 0.7rem 0.22rem;
+  }
+}

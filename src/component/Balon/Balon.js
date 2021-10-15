@@ -5,7 +5,7 @@ export default function Balon() {
   return(
     <section className='daftar-calon' id='daftar-bakal-calon-ketua'>
       <div>
-        <h4>Pendaftaran Bakal Calon Ketua MUNASIKATA UPN Periode 2021 - 2024 telah dibuka. </h4>
+        <h4>Pendaftaran Bakal Calon Ketua MUNASIKATA UPN Periode 2021 - 2025 telah dibuka. </h4>
         <h4>Daftar menjadi BAKAL CALON KETUA sekarang juga</h4>
       </div>
       
