@@ -43,6 +43,7 @@ h1 {
 .detailProfile > div > section:nth-child(2) > h4 {
   margin-bottom: 1rem;
   font-weight: 500;
+  font-size: 2rem;
 }
 
 .detailProfile > div > section:nth-child(2) > blockquote {
@@ -74,6 +75,13 @@ h1 {
   font-size: 2rem;
   color: #FFFFFF;
   line-height: 3rem!important;
+}
+
+.sosmed-candidate > p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1500px) {
@@ -126,6 +134,7 @@ h1 {
 
   .detailProfile > div:nth-child(2) > h4 {
     font-size: 1.4rem;
+
     
    }
 }

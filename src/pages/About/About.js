@@ -10,7 +10,7 @@ import { Context } from "../../store";
 
 export default function About() {
   const[dpt] = useState(true)
-  const [ontime]   = useState(false);
+  const [ontime]   = useState(true);
   const [candidate] = useContext(Context);
 
   //useEffect(() => {
@@ -48,7 +48,7 @@ export default function About() {
       <div className='calon-detail' style={{display: ontime? 'block' : 'none'}}>
         <div className='container'>
         <section >
-          <h3 style={{ fontWeight: "500" }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
+          <h3 style={{ fontWeight: "500", marginBottom:'1rem' }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
         </section>
           <Profile profile={candidate.candidate} />
         </div>

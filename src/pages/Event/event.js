@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import * as image from "../../utils/image";
+import * as imageEvent from "../../utils/eventImage";
 import Tabs from "../../component/tabs/Tabs";
 import { useLocation } from "react-router-dom";
 import queryString from 'querystring'; 
@@ -92,6 +93,33 @@ function Content() {
   //}
 ]
 
+const competition = [
+    {
+    header: 'IKATA E-SPORT COMPETITION (UMUM)',
+    description: 'Mobile Legends competition  dengan total hadiah Up to Rp 10,000,000 - Registration Fee Rp 100,000 - Open Slot 128 Slot (Multiple Slot Max 2/Team).',
+    tanggal: '6 - 12 Desember 2021',
+    waktu: '',
+    tempat: '',
+    pendaftaran: '23 Oktober 2021 - 23 November 2021',
+    register: 'https://lynk.id/mlikata2021',
+    poster: imageEvent.MLExternal,
+    contactPerson: 'Joshua - 081264396545',
+    imagePoster: 'MLExternal'
+  },
+  {
+    header: 'IKATA E-SPORT COMPETITION (TAMBANG)',
+    description: 'Mobile Legends competition  dengan total hadiah Up to Rp 10,000,000 - Registration Fee Rp 100,000 - Open Slot 64 Slot (Multiple Slot Max 2/Team). ',
+    tanggal: '6 - 12 Desember 2021',
+    waktu: '',
+    tempat: '',
+    pendaftaran: '23 Oktober 2021 - 23 November 2021',
+    register: 'https://lynk.id/mlikata2021',
+    poster: imageEvent.MLInternal,
+    contactPerson: 'Stefanus - 085159150588',
+    imagePoster: 'MLInternal'
+  },
+]
+
 
   if(tab === 'golf'){
     return <Golf data={golf} />
@@ -103,7 +131,7 @@ function Content() {
     return <Gathering/>
   }
   if(tab === 'competition'){
-    return <Competition/>
+    return <Competition data={competition} />
   }
   if(tab === 'workshop'){
     return <Workshop/>

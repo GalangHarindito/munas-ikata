@@ -9,17 +9,39 @@ export default function Sponsor() {
     {image:image.sponsor3, sponsorName:'img-GPE'},
     {image:image.Sponsor4, sponsorName:'img-GPE'},
     {image:image.Sponsor5, sponsorName:'img-BATU'},
-    {image:image.Sponsor6, sponsorName:'img-Kelixindo'}
+    {image:image.Sponsor6, sponsorName:'img-Kelixindo'},
   ]
+
   return (
     <div className="sponsor-content">
-      {sponsor.map((el,idx) => {
+      <section>
+        <h5>Gold Sponsorship</h5>
+        <div>
+           {image.imgSponsorGold.map((el,idx) => {
         return (
           <section key={idx}>
           <img src={el.image} alt={`img-sponsor-${el.sponsorName}`} />
         </section>
         )
       })}
+        </div>
+       
+      </section>
+       
+      <section>
+      <h5>Silver Sponsorship</h5>
+      <div>
+          {image.imgSponsor.map((el,idx) => {
+        return (
+          <section key={idx}>
+          <img src={el.image} alt={`img-sponsor-${el.sponsorName}`} />
+        </section>
+        )
+      })}
+      </div>
+       
+      </section>
+     
     </div>
   )
 }

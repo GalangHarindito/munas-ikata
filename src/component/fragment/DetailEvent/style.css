@@ -2,8 +2,15 @@
   margin-bottom: 2rem;
 }
 .detail-event > div > div {
-  display: flex;
-  align-items: center;
+  display: grid;
+grid-template-columns: 0.2fr 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.detail-event > div > h3 {
+  margin-bottom: 1rem;
 }
 
 .detail-event >  div:last-child {
@@ -14,9 +21,17 @@
   border-bottom: none!important;
 }
 
-.detail-event > div > div > img {
- width: 20%;
- height: 50%;
+.detail-event > div > div > section {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .detail-event > div > div > section > a{
+  margin-top: 1rem;
+ }
+
+.detail-event > div > div > a > img {
+  width: 18rem;
  margin-right: 2rem;
 }
 
@@ -24,6 +39,12 @@
   padding: 0.5rem;
   font-weight: normal;
 }
+
+.detail-event > div > div > div > p:first-child {
+  font-size: 1.2rem;
+  padding: 0.2rem 0;
+}
+
 .detail-event > div > div > div > a {
   text-decoration: none;
   color: #fff;
@@ -64,6 +85,7 @@
   }
   .detail-event > div > h3 {
     font-size: 1.2rem;
+    line-height: normal;
   }
   .image-events {
     height: 16rem;
@@ -77,6 +99,9 @@
   .detail-event > div > div > div > a {
     padding: 0.4rem 2rem;
     font-size: 0.865rem;
+  }
+  .detail-event > div > div > div > p:first-child {
+    font-size: 1rem;
   }
 }
 
@@ -87,6 +112,7 @@
   }
   .detail-event > div > h3 {
     font-size: 1.2rem;
+    line-height: normal;
   }
   .image-events {
     height: 16rem;
@@ -100,5 +126,9 @@
   .detail-event > div > div > div > a {
     padding: 0.4rem 2rem;
     font-size: 0.865rem;
+  }
+
+  .detail-event > div > div > div > p:first-child {
+    font-size: 1rem;
   }
 }

@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useRef } from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 import * as image from '../../utils/image';
 import axios from 'axios';
 import { Context } from '../../store';
+import useOutsideClick from "./useOutsideClick";
 
 export default function Header() {
   const location = useLocation();
@@ -66,6 +67,12 @@ getdataCandidate()
     window.addEventListener("scroll", changeBackground);
   });
 
+  const ref = useRef();
+
+  useOutsideClick(ref, () => {
+    if (menuBar) setMenuBar(false);
+  });
+
   return (
     <header>
       <nav >
@@ -78,7 +85,7 @@ getdataCandidate()
           <div className='bar2'></div>
           <div className='bar3'></div>
         </div>
-        <div className={`nav-menu ${menuBar?'nav-menu' : 'hidden'}`}>
+        <div className={`nav-menu ${menuBar?'nav-menu' : 'hidden'}`} ref={ref}>
           <ul>
             <li className={splitLocation[1] === "" ? "active" : ""}>
               <Link to='/'>Home</Link>
