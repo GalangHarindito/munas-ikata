@@ -11,7 +11,15 @@
 }
 
 .sponsor-content > section:nth-child(1) > div > section > img {
+  width: 8rem;
+}
+
+.sponsor-content > section:nth-child(2) > div > section > img {
   width: 6rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:first-child > img {
+  width: 10rem;
 }
 
 .sponsor-content > section > div {
@@ -21,26 +29,49 @@
   flex-wrap: wrap;
 }
 
-.sponsor-content img {
+.sponsor-content > section > div > section > img {
   width: 4rem;
   margin-right: 1rem;
 }
 
+.sponsor-content > section:nth-child(4) > div > section:nth-child(2) > img,
+.sponsor-content > section:nth-child(4) > div > section:nth-child(3) > img {
+  width: 6rem;
+}
+
+.sponsor-content > section > div > section:last-child > img {
+  margin-right: 0rem;
+}
+
 .sponsor-content section {
-  margin: 1rem 0.8rem;
+  padding: 1rem 0.8rem;
 }
 
 @media screen and (max-width: 900px) {
   .sponsor-content img {
-    width: 2rem;
+    width: 3rem;
     margin-right: 0;
-    margin-bottom: 0.7rem;
   }
+
   .sponsor-content > section:nth-child(1) > div > section > img {
+    width: 5rem;
+    margin-right: 0;
+  }
+
+  .sponsor-content > section:nth-child(2) > div > section > img {
     width: 4rem;
     margin-right: 0;
-    margin-bottom: 0.7rem;
   }
+
+  .sponsor-content > section:nth-child(4) > div > section:nth-child(2) > img,
+.sponsor-content > section:nth-child(4) > div > section:nth-child(3) > img {
+  width: 6rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:first-child > img {
+  width: 8rem;
+}
+
   .sponsor-content > section > h5 {
     font-size: 1rem;
    }
@@ -48,15 +79,28 @@
 
 @media screen and (max-width: 700px) {
   .sponsor-content img {
-    width: 2rem;
+    width: 3rem;
     margin-right: 0;
-    margin-bottom: 0.7rem;
   }
+
   .sponsor-content > section:nth-child(1) > div > section > img {
+    width: 5rem;
+    margin-right: 0;
+  }
+
+  .sponsor-content > section:nth-child(2) > div > section > img {
     width: 4rem;
     margin-right: 0;
-    margin-bottom: 0.7rem;
   }
+
+  .sponsor-content > section:nth-child(4) > div > section:nth-child(2) > img,
+.sponsor-content > section:nth-child(4) > div > section:nth-child(3) > img {
+  width: 6rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:first-child > img {
+  width: 8rem;
+}
 
   .sponsor-content > section > h5 {
     font-size: 1rem;

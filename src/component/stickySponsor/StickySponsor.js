@@ -9,7 +9,7 @@ const [sticky] = useState(true)
     <div className={sticky? 'sticky' : 'absolute'} >
     <p>Sponsor</p>
     <br />
-   {sponsor.imgSponsorGold.map((el, idx) => {
+   {sponsor.imgSponsorPlatinum.map((el, idx) => {
      return(
       <img key={idx} src={el.image} alt={`img-sponsor-${el.sponsorName}`} />
      )

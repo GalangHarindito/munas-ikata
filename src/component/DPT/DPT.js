@@ -5,7 +5,7 @@ export default function DPT() {
   return(
     <section className='daftar-pemilih'>
       <div>
-        <h4>Pemilihan Ketua MUNASIKATA UPN Periode 2021 telah dibuka. </h4>
+        <h4>Pemilihan Ketua IKATA UPN Periode 2021 - 2025 telah dibuka. </h4>
         <h4>Daftar menjadi DPT sekarang juga</h4>
       </div>
       

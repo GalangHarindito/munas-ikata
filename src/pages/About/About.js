@@ -10,7 +10,7 @@ import { Context } from "../../store";
 
 export default function About() {
   const[dpt] = useState(true)
-  const [ontime]   = useState(true);
+  const [ontime]   = useState(false);
   const [candidate] = useContext(Context);
 
   //useEffect(() => {

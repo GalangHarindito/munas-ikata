@@ -21,6 +21,6 @@ export const ikata2 = (
     <p>Pada munas kali ini, Biografi dan pemaparan visi misi calon ketua ikata akan lebih mudah di akses oleh para alumni di seluruh penjuru dunia.</p><br />
     <p>Pemilihan ketua akan dilaksankan secara <b><i>E-Voting</i></b> dan hasilnya pun dapat dilihat secara real-time.</p>
     <br />
-    <p><b>Mari bersama sukseskan dan pantu terus update terkini Gelaran Munas Ikata ke -6 ini!</b></p>
+    <p><b>Mari bersama sukseskan dan pantau terus update terkini Gelaran Munas Ikata ke -6 ini!</b></p>
   </>
 )

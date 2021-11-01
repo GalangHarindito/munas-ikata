@@ -84,6 +84,15 @@ h1 {
   font-weight: 500;
 }
 
+.sosmed-candidate > section > a {
+  padding: 0 1rem 0 0 ;
+  cursor: pointer;
+}
+
+.sosmed-candidate > section > a > i {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 1500px) {
 
   .detailProfile > div:nth-child(1) {
@@ -132,11 +141,23 @@ h1 {
     font-size: 1rem;
   }
 
+  .detailProfile > div > section:nth-child(2) > p > p{
+    font-size: 1rem;
+  }
+
   .detailProfile > div:nth-child(2) > h4 {
     font-size: 1.4rem;
 
     
    }
+
+   .sosmed-candidate > section > a > i {
+    font-size: 1.7rem;
+  }
+
+  .sosmed-candidate > p {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -173,12 +194,24 @@ h1 {
   
   .detailProfile > div > section:nth-child(2) > p {
     font-size: 0.865rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .detailProfile > div > section:nth-child(2) > p > p{
+    font-size: 0.865rem;
   }
 
   .detailProfile > div:nth-child(2) > h4 {
     font-size: 1.2rem;
     
    }
+   .sosmed-candidate > section > a > i {
+    font-size: 1.5rem;
+  }
+
+  .sosmed-candidate > p {
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -188,7 +221,7 @@ h1 {
   .detailProfile > div:nth-child(1) {
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 1rem;
     border-bottom: 0.1rem solid #C4C4C4;
@@ -226,10 +259,22 @@ h1 {
   
   .detailProfile > div > section:nth-child(2) > p {
     font-size: 0.865rem;
+    margin-bottom: 0.7rem;
+  }
+  .detailProfile > div > section:nth-child(2) > p > p{
+    font-size: 0.865rem;
   }
 
   .detailProfile > div:nth-child(2) > h4 {
     font-size: 1.2rem;
     
    }
+
+   .sosmed-candidate > section > a > i {
+    font-size: 1.5rem;
+  }
+
+  .sosmed-candidate > p {
+    font-size: 1.2rem;
+  }
 }

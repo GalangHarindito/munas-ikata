@@ -94,9 +94,21 @@ function Content() {
 ]
 
 const competition = [
+  {
+    header: 'Virtual Sports & Charity MUNAS IKATA VI 2021',
+    description: ' Panitia Munas IKATA ke-6 akan mengadakan kegiatan virtual sport & charity untuk memeriahkan Munas IKATA VI bagi IKATA dan alumni UPN serta keluarga dengan mengedepankan protokol kesehatan di setiap kegiatan. Kegiatan ini akan dibagi menjadi 3 kategori yaitu Fun Walk 30 km, Fun Run 50 km dan Fun Bike 200 km.',
+    tanggal: '6 November 2021 – 5 Desember 2021',
+    waktu: '',
+    tempat: '',
+    pendaftaran: '30 Oktober 2021 – 5 November 2021',
+    register: 'http://bit.ly/ikatamunasvr2021',
+    poster: imageEvent.VirtualSports,
+    contactPerson: 'Agus "Brickets" (98) - 081380830110',
+    imagePoster: 'VirtualSports'
+  },
     {
     header: 'IKATA E-SPORT COMPETITION (UMUM)',
-    description: 'Mobile Legends competition  dengan total hadiah Up to Rp 10,000,000 - Registration Fee Rp 100,000 - Open Slot 128 Slot (Multiple Slot Max 2/Team).',
+    description: 'Mobile Legends competition  dengan total hadiah Up to Rp 10,000,000 - Registration Fee Rp 80,000 - Open Slot 128 Slot (Multiple Slot Max 2/Team).',
     tanggal: '6 - 12 Desember 2021',
     waktu: '',
     tempat: '',

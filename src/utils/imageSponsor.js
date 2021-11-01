@@ -7,6 +7,13 @@ import imgSpon6 from '../assets/sponsor/Kelixindo Kreasitama.png';
 import imgSponMhu from '../assets/sponsor/mhu.png';
 import imgSponTia from '../assets/sponsor/tia.png';
 import imgSponBmb from '../assets/sponsor/bmb.png';
+import imgSponBbp from '../assets/sponsor/bbp.png';
+import imgSponTrinatha from '../assets/sponsor/trinatha.png';
+import imgSponAtlas from '../assets/sponsor/atlas.png';
+import imgSponIsm from '../assets/sponsor/ism.png';
+import imgSponMmg from '../assets/sponsor/mmg.png';
+import imgSponCal from '../assets/sponsor/cal.png';
+import imgSponAbb from '../assets/sponsor/asmin.png';
 
 
 export const sponsor1 = imgSpon1;
@@ -29,8 +36,34 @@ export const imgSponsor = [
   {image:Sponsor6, sponsorName:'img-Kelixindo'},
 ]
 
-export const imgSponsorGold = [
-  {image:imgSponMhu, sponsorName:'img-MHU'},
-  {image:imgSponTia, sponsorName:'img-TIA'},
-  {image:imgSponBmb, sponsorName:'img-BMB'}
+export const imgSponsorBronze = [
+  {image:imgSponBbp, sponsorName:'bbp'},
+  {image:imgSponIsm, sponsorName:'ism'},
+  {image:imgSponMmg, sponsorName:'mmg'},
+  {image:sponsor1, sponsorName:'GPE'},
+  {image:sponsor2, sponsorName:'GPE'},
+  {image:sponsor3, sponsorName:'GPE'},
+  {image:Sponsor4, sponsorName:'GPE'},
+  {image:Sponsor5, sponsorName:'BATU'},
+  {image:Sponsor6, sponsorName:'Kelixindo'},
 ]
+
+export const imgSponsorGold = [
+  {image:imgSponTia, sponsorName:'TIA'},
+  {image:imgSponBmb, sponsorName:'BMB'}
+]
+
+export const imgSponsorPlatinum = [
+  {image:imgSponAtlas, sponsorName:'Atlas'},
+  {image:imgSponTrinatha, sponsorName:'Trinatha'},
+  {image:imgSponMhu, sponsorName:'MHU'}
+]
+
+export const imgSponsorSilver = [
+  {image:imgSponAbb, sponsorName:'Abb'},
+]
+
+export const imgSupport = [
+  {image:imgSponCal, sponsorName:'Cal'},
+]
+
