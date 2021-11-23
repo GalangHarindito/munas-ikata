@@ -14,6 +14,10 @@ import imgSponIsm from '../assets/sponsor/ism.png';
 import imgSponMmg from '../assets/sponsor/mmg.png';
 import imgSponCal from '../assets/sponsor/cal.png';
 import imgSponAbb from '../assets/sponsor/asmin.png';
+import imgSponMim from '../assets/sponsor/mim.png';
+import imgSponApt from '../assets/sponsor/apt.png';
+import imgSponVip from '../assets/sponsor/vip.png';
+import imgSponDahana from '../assets/sponsor/dahana.png';
 
 
 export const sponsor1 = imgSpon1;
@@ -40,6 +44,10 @@ export const imgSponsorBronze = [
   {image:imgSponBbp, sponsorName:'bbp'},
   {image:imgSponIsm, sponsorName:'ism'},
   {image:imgSponMmg, sponsorName:'mmg'},
+  {image:imgSponMim, sponsorName:'mim'},
+  {image:imgSponApt, sponsorName:'apt'},
+  {image:imgSponVip, sponsorName:'vip'},
+  {image:imgSponDahana, sponsorName:'dahana'},
   {image:sponsor1, sponsorName:'GPE'},
   {image:sponsor2, sponsorName:'GPE'},
   {image:sponsor3, sponsorName:'GPE'},

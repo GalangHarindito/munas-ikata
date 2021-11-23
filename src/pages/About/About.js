@@ -49,8 +49,11 @@ export default function About() {
         <div className='container'>
         <section >
           <h3 style={{ fontWeight: "500", marginBottom:'1rem' }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
+        </section >
+        <section id='candidate'>
+           <Profile profile={candidate.candidate} />
         </section>
-          <Profile profile={candidate.candidate} />
+         
         </div>
         </div>
       <div className='pendaftaran' style={{display: dpt? 'block' : 'none'}}>

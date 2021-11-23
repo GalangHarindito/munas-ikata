@@ -2,6 +2,9 @@ import axios from 'axios';
 
 const BASIC_URL = 'https://app-dev.munasikataupn.com'
 const BASE_URL = `${BASIC_URL}/api/v1`;
+//export const BASIC_URL = 'https://app-dev.munasikataupn.com'
+//export const URL = 'https://stage-ikata.semoga.online/api/';
+export const URL = 'https://ikata.semoga.online/api/';
 
 const fetch = (url, method, paramBody, paramHeader) => {
   const options = {

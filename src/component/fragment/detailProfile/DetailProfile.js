@@ -72,21 +72,22 @@ export default function DetailProfile(props) {
           </p>
           {data.biodata.linkedIn ||
           data.biodata.instagram ||
-          data.biodata.facebook ? (
+          data.biodata.facebook 
+           ? (
             <section className='sosmed-candidate'>
               <p>Media Sosial</p>
               <section>
-                {data.biodata.linkedIn && (
+                {data.biodata.linkedIn && data.biodata.linkedIn !== 'null' && (
                   <a href={data.biodata.linkedIn} target='_blank'>
                     <i class='fab fa-linkedin'></i>
                   </a>
                 )}
-                {data.biodata.instagram && (
+                {data.biodata.instagram && data.biodata.instagram !== 'null' && (
                   <a href={data.biodata.instagram} target='_blank'>
                     <i class='fab fa-instagram'></i>
                   </a>
                 )}
-                {data.biodata.facebook && (
+                {data.biodata.facebook && data.biodata.facebook !== 'null' && (
                   <a href={data.biodata.facebook} target='_blank'>
                     <i class='fab fa-facebook'></i>
                   </a>

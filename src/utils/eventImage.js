@@ -1,5 +1,5 @@
-import imgML2 from '../assets/Event/Poster-ML-internal.png';
-import imgML1 from '../assets/Event/Poster-ML-external.png';
+import imgML2 from '../assets/Event/Poster-ML-internal.jpg';
+import imgML1 from '../assets/Event/Poster-ML-external.jpg';
 import imgVirtual from '../assets/Event/Virtual_sports.jpeg';
 
 export const MLExternal = imgML1;

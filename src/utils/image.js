@@ -1,5 +1,5 @@
 import imgIkata from '../assets/img-ikata.png';
-import imgUpn from '../assets/UPN-Veteran.png';
+import imgUpn from '../assets/img-upn.png';
 import imgMunas1 from '../assets/img-munas-2.png';
 import imgVote from "../assets/Landing Page-archive 1.svg";
 import imgGolf from "../assets/Landing Page-golf 1.svg";
