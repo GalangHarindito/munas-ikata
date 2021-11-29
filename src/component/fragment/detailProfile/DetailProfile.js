@@ -33,7 +33,7 @@ export default function DetailProfile(props) {
           </blockquote>
           <p>{data.biodata.description}</p>
           {data.biodata.organizationExperience && <p>Pengalaman Organisasi</p>}
-          <p>{data.biodata.organizationExperience &&
+          <p>{data.biodata.organizationExperience && 
             experience.map((el, idx) => {
               return experience.length <= 1 ? (
                 <p key={idx}>{el}</p>

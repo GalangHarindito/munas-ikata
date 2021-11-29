@@ -12,14 +12,22 @@ import { Carousel } from "react-responsive-carousel";
 import CardCandidate from "../../component/cardCandidate/cardCandidate";
 import DPT from "../../component/DPT/DPT";
 import Balon from "../../component/Balon/Balon";
+import { Context } from "../../store";
 
 
 export default function Landing() {
-  const [ontime]   = useState(false);
-  const [dpt] = useState(true)
-  const [calon] = useState(true)
+  const [ontime, setontime]   = useState(true);
+  const [dpt] = useState(true);
+  const [calon] = useState(false);
+  const [candidate] = useContext(Context);
 
-  
+  useEffect(() => {
+    if(candidate.candidate.length <= 0){
+      setontime(false)
+    }else{
+      setontime(true)
+    }
+  },[candidate])
 
   const cardEvent = [
     {
@@ -145,49 +153,6 @@ export default function Landing() {
     );
   };
 
-  //const _renderVideo = () => {
-  //  return (
-  //    <div>
-  //      <h2>MUNAS 6 IKATA </h2>
-  //      <p>
-  //        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  //        eiusmod tempor incididunt ut l. abore et dolore magna aliqua. Ut enim
-  //        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-  //        aliquip ex ea commodo consequat. Duis aute irure dolor in
-  //        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-  //        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  //        culpa qui officia deserunt mollit anim id est laborum.
-  //      </p>
-  //      {/*<Carousel autoPlay>
-  //    <div className='video-pengurus'>
-  //      <video
-  //        width='700'
-  //        height='395'
-  //        src={video1}
-  //        title='Ikata video player'
-  //        frameBorder='0'
-  //        allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-  //        allowFullScreen
-  //        controls
-  //      ></video>
-  //      </div>
-  //      <div className='video-pengurus'>
-  //        <video
-  //        width='700'
-  //        height='395'
-  //        src={video2}
-  //        title='Ikata video player'
-  //        frameBorder='0'
-  //        allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-  //        allowFullScreen
-  //        controls
-  //      ></video>
-  //      </div>
-  //      </Carousel>*/}
-  //    </div>
-  //  );
-  //};
-
   return (
     <>
       <StickySponsor />
@@ -302,11 +267,14 @@ export default function Landing() {
                   Mari Sukseskan Munas IKATA
                 </h3>
                 <br />
+                <h5><b>Batas Akhir Pendaftaran DPT Tanggal 15 Desember 2021 Pukul 12:00 WIB</b></h5>
+                <br />
                 <a href='https://evoting.munasikataupn.com'>Daftar Menjadi DPT</a>
               </div>
             </div>
           </div>
         </div>
+
         <div className='pendaftaran' style={{display: calon? 'block' : 'none'}}>
           <div className='container'>
             <Balon />

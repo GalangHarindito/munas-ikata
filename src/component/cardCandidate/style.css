@@ -40,7 +40,7 @@
   width: 3rem;
   background-color: var(--primary-color);
   opacity: 0.8;
-  height: 20em;
+  height: 17em;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@
   line-height: 3rem!important;
 }
 
-.image-candidate{
+.card-image-candidate{
   width: 17rem;
   height: 17rem;
   background-size: cover;
@@ -64,7 +64,7 @@
   }
 
   .label{
-    height: 18em;   
+    height: 17em;   
   }
 }
 
@@ -97,7 +97,7 @@
   width: 2rem;
   background-color: var(--primary-color);
   opacity: 0.8;
-  height: 15em;
+  height: 14em;
   text-align: center;
 }
 .card-candidate > div >.label > p{
@@ -105,7 +105,7 @@
   color: #FFFFFF;
 }
 
-.image-candidate{
+.card-image-candidate{
   width: 14rem;
   height: 14rem;
   background-size: cover;
@@ -140,7 +140,7 @@
   width: 2rem;
   background-color: var(--primary-color);
   opacity: 0.8;
-  height: 15em;
+  height: 14em;
   text-align: center;
 }
 .card-candidate > div > .label > p{
@@ -148,7 +148,7 @@
   color: #FFFFFF;
 }
 
-.image-candidate{
+.card-image-candidate{
   width: 14rem;
   height: 14rem;
   background-size: cover;

@@ -18,6 +18,15 @@ import imgSponMim from '../assets/sponsor/mim.png';
 import imgSponApt from '../assets/sponsor/apt.png';
 import imgSponVip from '../assets/sponsor/vip.png';
 import imgSponDahana from '../assets/sponsor/dahana.png';
+import imgSpon92 from '../assets/sponsor/ikata_92.png';
+import imgSponGip from '../assets/sponsor/gip.png';
+import imgSponUmm from '../assets/sponsor/umm.png';
+import imgSponGolf from '../assets/sponsor/golf.png';
+import imgSponJay from '../assets/sponsor/jay.jpeg';
+import imgSponKpc from '../assets/sponsor/kpc.png';
+import imgSponBjbr from '../assets/sponsor/bjbr.png';
+import imgSponTriaryani from '../assets/sponsor/triaryani.png';
+
 
 
 export const sponsor1 = imgSpon1;
@@ -46,7 +55,6 @@ export const imgSponsorBronze = [
   {image:imgSponMmg, sponsorName:'mmg'},
   {image:imgSponMim, sponsorName:'mim'},
   {image:imgSponApt, sponsorName:'apt'},
-  {image:imgSponVip, sponsorName:'vip'},
   {image:imgSponDahana, sponsorName:'dahana'},
   {image:sponsor1, sponsorName:'GPE'},
   {image:sponsor2, sponsorName:'GPE'},
@@ -58,20 +66,29 @@ export const imgSponsorBronze = [
 
 export const imgSponsorGold = [
   {image:imgSponTia, sponsorName:'TIA'},
-  {image:imgSponBmb, sponsorName:'BMB'}
+  {image:imgSponBmb, sponsorName:'BMB'},
+  {image:imgSponJay, sponsorName:'JAY'}
 ]
 
 export const imgSponsorPlatinum = [
   {image:imgSponAtlas, sponsorName:'Atlas'},
   {image:imgSponTrinatha, sponsorName:'Trinatha'},
-  {image:imgSponMhu, sponsorName:'MHU'}
+  {image:imgSponMhu, sponsorName:'MHU'},
+  {image:imgSpon92, sponsorName:'92'}
 ]
 
 export const imgSponsorSilver = [
   {image:imgSponAbb, sponsorName:'Abb'},
+  {image:imgSponUmm, sponsorName:'Umm'},
+  {image:imgSponKpc, sponsorName:'Kpc'},
 ]
 
 export const imgSupport = [
   {image:imgSponCal, sponsorName:'Cal'},
+  {image:imgSponVip, sponsorName:'vip'},
+  {image:imgSponGip, sponsorName:'gip'},
+  {image:imgSponGolf, sponsorName:'golf'},
+  {image:imgSponBjbr, sponsorName:'bjbr'},
+  {image:imgSponTriaryani, sponsorName:'triaryani'},
 ]
 

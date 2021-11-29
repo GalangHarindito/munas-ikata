@@ -203,6 +203,7 @@ h1 {
 
   .detailProfile > div:nth-child(2) > h4 {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     
    }
    .sosmed-candidate > section > a > i {
@@ -250,6 +251,7 @@ h1 {
   }
   .detailProfile > div > section:nth-child(2) > h4 {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
   
   .detailProfile > div > section:nth-child(2) > blockquote > i {
@@ -260,6 +262,7 @@ h1 {
   .detailProfile > div > section:nth-child(2) > p {
     font-size: 0.865rem;
     margin-bottom: 0.7rem;
+    text-align: justify;
   }
   .detailProfile > div > section:nth-child(2) > p > p{
     font-size: 0.865rem;

@@ -14,12 +14,24 @@
   width: 8rem;
 }
 
+.sponsor-content > section:nth-child(1) > div > section:nth-child(4) > img {
+  width: 4rem;
+}
+
 .sponsor-content > section:nth-child(2) > div > section > img {
   width: 6rem;
 }
 
 .sponsor-content > section:nth-child(3) > div > section:first-child > img {
   width: 10rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:nth-child(2) > img {
+  width: 8rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:nth-child(3) > img {
+  width: 8rem;
 }
 
 .sponsor-content > section > div {
@@ -64,6 +76,10 @@
     margin-right: 0;
   }
 
+  .sponsor-content > section:nth-child(1) > div > section:nth-child(4) > img {
+    width: 2rem;
+  }
+
   .sponsor-content > section:nth-child(4) > div > section:nth-child(2) > img,
 .sponsor-content > section:nth-child(4) > div > section:nth-child(3) > img,
 .sponsor-content > section:nth-child(4) > div > section:nth-child(5) > img {
@@ -72,6 +88,14 @@
 
 .sponsor-content > section:nth-child(3) > div > section:first-child > img {
   width: 8rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:nth-child(2) > img {
+  width: 6rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:nth-child(3) > img {
+  width: 6rem;
 }
 
   .sponsor-content > section > h5 {
@@ -90,6 +114,10 @@
     margin-right: 0;
   }
 
+  .sponsor-content > section:nth-child(1) > div > section:nth-child(4) > img {
+    width: 2rem;
+  }
+
   .sponsor-content > section:nth-child(2) > div > section > img {
     width: 4rem;
     margin-right: 0;
@@ -103,6 +131,13 @@
 
 .sponsor-content > section:nth-child(3) > div > section:first-child > img {
   width: 8rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:nth-child(2) > img {
+  width: 6rem;
+}
+.sponsor-content > section:nth-child(3) > div > section:nth-child(3) > img {
+  width: 6rem;
 }
 
   .sponsor-content > section > h5 {

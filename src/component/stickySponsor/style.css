@@ -27,6 +27,11 @@
   margin-bottom: 1rem;
 }
 
+.sticky > img:nth-child(6){
+  width: 1.3rem;
+  margin-left: 1rem;
+}
+
 .absolute > p{
   font-size: 0.7rem;
   font-weight: 600;
@@ -60,6 +65,11 @@
     position: fixed;
     opacity: 0.4;
   }
+
+  .sticky > img:nth-child(6){
+    width: 1.3rem;
+    margin-left: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -74,5 +84,10 @@
     left: 85%;
     position: fixed;
     opacity: 0.4;
+  }
+
+  .sticky > img:nth-child(6){
+    width: 1.3rem;
+    margin-left: 0.5rem;
   }
 }

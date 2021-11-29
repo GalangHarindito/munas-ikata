@@ -5,17 +5,20 @@ import * as text from "../../component/text/text";
 import StickySponsor from "../../component/stickySponsor/StickySponsor";
 import DPT from "../../component/DPT/DPT";
 import Profile from "../../component/profile/Profile";
-import GetdataCandidate from "../../utils/fetch2";
 import { Context } from "../../store";
 
 export default function About() {
   const[dpt] = useState(true)
-  const [ontime]   = useState(false);
+  const [ontime, setontime] = useState(true);
   const [candidate] = useContext(Context);
 
-  //useEffect(() => {
-  //  GetdataCandidate()
-  //},[])
+  useEffect(() => {
+    if(candidate.candidate.length <= 0){
+      setontime(false)
+    }else{
+      setontime(true)
+    }
+  },[candidate])
 
   return (
     <>
