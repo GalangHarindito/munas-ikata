@@ -44,11 +44,5 @@ function Content(props) {
       return <DetailProfile data={data[i]} />
     }
   }
-  //if( data.navValues.includes(candidate)){
-  //  return <ContactUs />
-  //}
-  //if( data.navValues.includes(candidate)){
-  //  return <DetailProfile />
-  //}
   return <DetailProfile data={data[0]} />
 }

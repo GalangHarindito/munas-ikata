@@ -9,7 +9,7 @@ import icMail from '../../assets/Landing Page-Iconly-Light-Message.svg'
 
 export default function Contact() {
   const contactPerson = [
-    { name: "Catur Gunadi", phoneNum: "081327166124", email: "cgndta92@gmail.com" },
+    { name: "Okky Chandra", phoneNum: "082149122112", email: "okkychandra1981@gmail.com" },
     { name: "Andriyan Harizona", phoneNum: "081368675431", email: "ucupharizona@gmail.com" },
     { name: "Andi Haristiawan", phoneNum: "082153178877", email: "andi.haristiawan@gmail.com  " },
   ];

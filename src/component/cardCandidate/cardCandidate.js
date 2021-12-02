@@ -23,7 +23,7 @@ export default function CardCandidate() {
             <p>{el.biodata.fullName}</p>
           </div>
           <div>
-            <Link to={`/tentangMunas?candidate=${el.biodata.fullName}#candidate`}>Lihat Detail</Link>
+            <Link to={`/tentangMunas?candidate=${el.biodata.fullName}`}>Lihat Detail</Link>
           </div>
         </div>
         )

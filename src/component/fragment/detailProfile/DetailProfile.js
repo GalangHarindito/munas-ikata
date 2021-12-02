@@ -12,6 +12,9 @@ export default function DetailProfile(props) {
     : [];
   const visi = data.biodata.visi ? data.biodata.visi.split("\n") : [];
   const misi = data.biodata.misi ? data.biodata.misi.split("\n") : [];
+  const description = data.biodata.description
+    ? data.biodata.description.split("\n")
+    : [];
 
   return (
     <section className='detailProfile'>
@@ -31,7 +34,17 @@ export default function DetailProfile(props) {
           <blockquote>
             <i>{`"${data.biodata.jargon}"`}</i>
           </blockquote>
-          <p>{data.biodata.description}</p>
+          { data.biodata.description && 
+          description.map((el, idx) => {
+            return(
+              <>
+              <p key={idx}>{el}</p>
+              </>
+            )
+            
+          })
+        }
+          
           {data.biodata.organizationExperience && <p>Pengalaman Organisasi</p>}
           <p>{data.biodata.organizationExperience && 
             experience.map((el, idx) => {

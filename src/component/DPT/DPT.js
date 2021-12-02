@@ -10,7 +10,7 @@ export default function DPT() {
         <h5><b>Batas Akhir Pendaftaran DPT Tanggal 15 Desember 2021 Pukul 12:00 WIB</b></h5>
       </div>
       
-      <a href='https://evoting.munasikataupn.com'>Daftar Menjadi DPT</a>
+      <a href='https://evoting.munasikataupn.com/sign-up'>Daftar Menjadi DPT</a>
     </section>
   )
 }

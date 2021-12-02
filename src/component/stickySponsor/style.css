@@ -24,12 +24,17 @@
   width: 3rem;
   display: flex;
   flex-direction: column;
+  justify-items: center;
   margin-bottom: 1rem;
 }
 
 .sticky > img:nth-child(6){
   width: 1.3rem;
   margin-left: 1rem;
+}
+
+.sticky > img:nth-child(7){
+  width: 3.5rem;
 }
 
 .absolute > p{
@@ -43,6 +48,10 @@
   flex-direction: column;
   margin-bottom: 1rem;
 }
+
+/*.sticky > img:nth-child(7){
+  width: 4rem;
+}*/
 
 @media screen and (max-width: 1200px) {
 
@@ -70,6 +79,10 @@
     width: 1.3rem;
     margin-left: 0.5rem;
   }
+
+  .sticky > img:nth-child(7){
+    width: 2rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -89,5 +102,9 @@
   .sticky > img:nth-child(6){
     width: 1.3rem;
     margin-left: 0.5rem;
+  }
+
+  .sticky > img:nth-child(7){
+    width: 2.5rem;
   }
 }

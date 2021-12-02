@@ -18,8 +18,16 @@
   width: 4rem;
 }
 
+.sponsor-content > section:nth-child(1) > div > section:nth-child(5) > img {
+  width: 10rem;
+}
+
 .sponsor-content > section:nth-child(2) > div > section > img {
   width: 6rem;
+}
+
+.sponsor-content > section:nth-child(2) > div > section:nth-child(4) > img {
+  width: 12rem;
 }
 
 .sponsor-content > section:nth-child(3) > div > section:first-child > img {
@@ -32,6 +40,9 @@
 
 .sponsor-content > section:nth-child(3) > div > section:nth-child(3) > img {
   width: 8rem;
+}
+.sponsor-content > section:nth-child(3) > div > section:nth-child(4) > img {
+  width: 6rem;
 }
 
 .sponsor-content > section > div {
@@ -56,6 +67,14 @@
   margin-right: 0rem;
 }
 
+
+.sponsor-content > section:nth-child(5) > div > section:nth-child(7) > img,
+.sponsor-content > section:nth-child(5) > div > section:nth-child(8) > img,
+.sponsor-content > section:nth-child(5) > div > section:nth-child(9) > img,
+.sponsor-content > section:nth-child(5) > div > section:nth-child(11) > img {
+  width: 6rem;
+}
+
 .sponsor-content section {
   padding: 1rem 0.8rem;
 }
@@ -69,6 +88,14 @@
   .sponsor-content > section:nth-child(1) > div > section > img {
     width: 5rem;
     margin-right: 0;
+  }
+
+  .sponsor-content > section:nth-child(1) > div > section:nth-child(5) > img {
+    width: 6rem;
+  }
+
+  .sponsor-content > section:nth-child(2) > div > section:nth-child(4) > img {
+    width: 10rem;
   }
 
   .sponsor-content > section:nth-child(2) > div > section > img {
@@ -98,6 +125,11 @@
   width: 6rem;
 }
 
+.sponsor-content > section:nth-child(3) > div > section:nth-child(4) > img {
+  width: 4rem;
+}
+
+
   .sponsor-content > section > h5 {
     font-size: 1rem;
    }
@@ -112,6 +144,14 @@
   .sponsor-content > section:nth-child(1) > div > section > img {
     width: 5rem;
     margin-right: 0;
+  }
+
+  .sponsor-content > section:nth-child(1) > div > section:nth-child(5) > img {
+    width: 6rem;
+  }
+
+  .sponsor-content > section:nth-child(2) > div > section:nth-child(4) > img {
+    width: 10rem;
   }
 
   .sponsor-content > section:nth-child(1) > div > section:nth-child(4) > img {
@@ -138,6 +178,10 @@
 }
 .sponsor-content > section:nth-child(3) > div > section:nth-child(3) > img {
   width: 6rem;
+}
+
+.sponsor-content > section:nth-child(3) > div > section:nth-child(4) > img {
+  width: 4rem;
 }
 
   .sponsor-content > section > h5 {

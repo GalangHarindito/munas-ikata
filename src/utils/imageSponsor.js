@@ -26,7 +26,17 @@ import imgSponJay from '../assets/sponsor/jay.jpeg';
 import imgSponKpc from '../assets/sponsor/kpc.png';
 import imgSponBjbr from '../assets/sponsor/bjbr.png';
 import imgSponTriaryani from '../assets/sponsor/triaryani.png';
-
+import imgSponQuantus from '../assets/sponsor/quantus.png';
+import imgSponSriwijaya from '../assets/sponsor/sriwijayabara.png';
+import imgSponMmj from '../assets/sponsor/mmj.png';
+import imgSponPpa from '../assets/sponsor/ppa.png';
+import imgSponTcp from '../assets/sponsor/tcp.png';
+import imgSponGmm from '../assets/sponsor/gmm.png';
+import imgSponIami from '../assets/sponsor/iami.png';
+import imgSponAlhasanie from '../assets/sponsor/alhasanie.png';
+import imgSponBkl from '../assets/sponsor/bkl.png';
+import imgSponNhm from '../assets/sponsor/nhm.png';
+import imgSpon86 from '../assets/sponsor/86.png';
 
 
 export const sponsor1 = imgSpon1;
@@ -67,20 +77,26 @@ export const imgSponsorBronze = [
 export const imgSponsorGold = [
   {image:imgSponTia, sponsorName:'TIA'},
   {image:imgSponBmb, sponsorName:'BMB'},
-  {image:imgSponJay, sponsorName:'JAY'}
+  {image:imgSponJay, sponsorName:'JAY'},
+  {image:imgSponTcp, sponsorName:'TCP'},
+  {image:imgSponAlhasanie, sponsorName:'Alhasanie'},
+  {image:imgSpon86, sponsorName:'86'}
 ]
 
 export const imgSponsorPlatinum = [
   {image:imgSponAtlas, sponsorName:'Atlas'},
   {image:imgSponTrinatha, sponsorName:'Trinatha'},
   {image:imgSponMhu, sponsorName:'MHU'},
-  {image:imgSpon92, sponsorName:'92'}
+  {image:imgSpon92, sponsorName:'92'},
+  {image:imgSponPpa, sponsorName:'ppa'},
+  {image:imgSponNhm, sponsorName:'nhm'}
 ]
 
 export const imgSponsorSilver = [
   {image:imgSponAbb, sponsorName:'Abb'},
   {image:imgSponUmm, sponsorName:'Umm'},
   {image:imgSponKpc, sponsorName:'Kpc'},
+  {image:imgSponQuantus, sponsorName:'Kpc'},
 ]
 
 export const imgSupport = [
@@ -90,5 +106,10 @@ export const imgSupport = [
   {image:imgSponGolf, sponsorName:'golf'},
   {image:imgSponBjbr, sponsorName:'bjbr'},
   {image:imgSponTriaryani, sponsorName:'triaryani'},
+  {image:imgSponSriwijaya, sponsorName:'sriwijaya'},
+  {image:imgSponMmj, sponsorName:'mmj'},
+  {image:imgSponGmm, sponsorName:'gmm'},
+  {image:imgSponIami, sponsorName:'iami'},
+  {image:imgSponBkl, sponsorName:'bkl'},
 ]
 
