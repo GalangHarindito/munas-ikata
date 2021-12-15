@@ -37,6 +37,12 @@ import imgSponAlhasanie from '../assets/sponsor/alhasanie.png';
 import imgSponBkl from '../assets/sponsor/bkl.png';
 import imgSponNhm from '../assets/sponsor/nhm.png';
 import imgSpon86 from '../assets/sponsor/86.png';
+import imgSponBerau from '../assets/sponsor/berau.png';
+import imgSponBbe from '../assets/sponsor/bbe.png';
+import imgSponCotecna from '../assets/sponsor/cotecna.png';
+import imgSponBanti from '../assets/sponsor/banti_indonesia.png';
+import imgSponAuger from '../assets/sponsor/auger.png';
+
 
 
 export const sponsor1 = imgSpon1;
@@ -66,6 +72,11 @@ export const imgSponsorBronze = [
   {image:imgSponMim, sponsorName:'mim'},
   {image:imgSponApt, sponsorName:'apt'},
   {image:imgSponDahana, sponsorName:'dahana'},
+  {image:imgSponBerau, sponsorName:'berau'},
+  {image:imgSponBbe, sponsorName:'bbe'},
+  {image:imgSponCotecna, sponsorName:'contecna'},
+  {image:imgSponBanti, sponsorName:'banti'},
+  {image:imgSponAuger, sponsorName:'auger'},
   {image:sponsor1, sponsorName:'GPE'},
   {image:sponsor2, sponsorName:'GPE'},
   {image:sponsor3, sponsorName:'GPE'},

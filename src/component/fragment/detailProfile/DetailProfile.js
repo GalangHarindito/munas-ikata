@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import * as image from "../../../utils/image";
 
 export default function DetailProfile(props) {
   const { data } = props;
@@ -91,17 +90,17 @@ export default function DetailProfile(props) {
               <p>Media Sosial</p>
               <section>
                 {data.biodata.linkedIn && data.biodata.linkedIn !== 'null' && (
-                  <a href={data.biodata.linkedIn} target='_blank'>
+                  <a href={data.biodata.linkedIn} target='_blank' rel="noreferrer">
                     <i class='fab fa-linkedin'></i>
                   </a>
                 )}
                 {data.biodata.instagram && data.biodata.instagram !== 'null' && (
-                  <a href={data.biodata.instagram} target='_blank'>
+                  <a href={data.biodata.instagram} target='_blank' rel="noreferrer">
                     <i class='fab fa-instagram'></i>
                   </a>
                 )}
                 {data.biodata.facebook && data.biodata.facebook !== 'null' && (
-                  <a href={data.biodata.facebook} target='_blank'>
+                  <a href={data.biodata.facebook} target='_blank' rel="noreferrer">
                     <i class='fab fa-facebook'></i>
                   </a>
                 )}

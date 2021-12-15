@@ -48,12 +48,12 @@ export default function About() {
           <h3>VIVA TAMBANG MANTAP SKALIII !!!</h3>
         </section>
       </div>
-      <div className='calon-detail' style={{display: ontime? 'block' : 'none'}}>
+      <div id='candidate' className='calon-detail' style={{display: ontime? 'block' : 'none'}}>
         <div className='container'>
         <section >
           <h3 style={{ fontWeight: "500", marginBottom:'1rem' }}>PROFIL CALON KETUA IKATA PERIODE 2021-2025</h3>
         </section >
-        <section id='candidate'>
+        <section>
            <Profile profile={candidate.candidate} />
         </section>
          

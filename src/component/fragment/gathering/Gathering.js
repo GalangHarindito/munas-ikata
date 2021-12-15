@@ -13,7 +13,7 @@ export default function Gathering(props) {
     <section className='container'>
       {data.length >= 1 ? (
         <section>
-          <img src={image.comingSoon} alt='img-coming-soon' />
+          {/*<img src={image.comingSoon} alt='img-coming-soon' />*/}
           <section className='content-gathering'>
             <DetailEvent data={data} />
           </section>

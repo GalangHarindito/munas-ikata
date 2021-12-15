@@ -59,8 +59,14 @@
 
 .sponsor-content > section:nth-child(4) > div > section:nth-child(2) > img,
 .sponsor-content > section:nth-child(4) > div > section:nth-child(3) > img,
-.sponsor-content > section:nth-child(4) > div > section:nth-child(5) > img {
+.sponsor-content > section:nth-child(4) > div > section:nth-child(5) > img,
+.sponsor-content > section:nth-child(4) > div > section:nth-child(9) > img {
   width: 6rem;
+}
+
+.sponsor-content > section:nth-child(4) > div > section:nth-child(10) > img,
+.sponsor-content > section:nth-child(4) > div > section:nth-child(11) > img {
+  width: 8rem;
 }
 
 .sponsor-content > section > div > section:last-child > img {

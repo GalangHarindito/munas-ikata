@@ -62,14 +62,14 @@ export default function Landing() {
       desc:'Mulai dari tahun ini acara seminar akan diadakan berbasis online atau webinar, yang pasti tema yang up to date dan narasumber yang up to date.',
       path: "/events?tab=seminar/webinar",
     },
-    {
-      image: image.workshop,
-      alt: "workshop",
-      title: "IKATA workshop",
-      backgroundColor: "#dcf3fe",
-      desc:'Sama dengan seminar yang tahun ini sebagian besar diadakan seraca online. Workshop pun akan dilakukan secara online',
-      path: "/events?tab=workshop",
-    },
+    //{
+    //  image: image.workshop,
+    //  alt: "workshop",
+    //  title: "IKATA workshop",
+    //  backgroundColor: "#dcf3fe",
+    //  desc:'Sama dengan seminar yang tahun ini sebagian besar diadakan seraca online. Workshop pun akan dilakukan secara online',
+    //  path: "/events?tab=workshop",
+    //},
     {
       image: image.gathering,
       alt: "gathering",
@@ -302,8 +302,8 @@ export default function Landing() {
             <div className='podcast-pengurus'>{vidPodcast()}</div>
             <br />
             <div className='podcast-footer'>
-              <a href='https://www.youtube.com/channel/UCd-fUSOU5V8Mz1rUf2m0SfA/videos'>
-                Lihat PODCAST lainnya
+              <a href='https://www.youtube.com/channel/UC9HwED5hkFPDGHwGbUVj9nQ/videos' target="_blank" rel="noreferrer">
+                Lihat Video IKATA lainnya
               </a>
             </div>
           </div>

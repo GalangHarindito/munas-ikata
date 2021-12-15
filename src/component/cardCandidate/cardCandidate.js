@@ -23,7 +23,7 @@ export default function CardCandidate() {
             <p>{el.biodata.fullName}</p>
           </div>
           <div>
-            <Link to={`/tentangMunas?candidate=${el.biodata.fullName}`}>Lihat Detail</Link>
+            <Link to={`/tentangMunas?tab=${el.biodata.fullName.toLowerCase().split(' ').join('')}#candidate`}>Lihat Detail</Link>
           </div>
         </div>
         )

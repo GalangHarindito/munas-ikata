@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./style.css";
 import Tabs from "../tabs/Tabs";
 import { useLocation } from "react-router-dom";
 import queryString from 'querystring'; 
 import DetailProfile from "../fragment/detailProfile/DetailProfile";
 import DropDown from "../elements/Dropdown/DropDown";
-import { Context } from "../../store";
-import ContactUs from "../form/contactUs/ContactUs";
 
 export default function Profile(props) {
   const { profile } = props;
@@ -25,8 +23,9 @@ export default function Profile(props) {
           <p>Profile :</p>
           <DropDown id='dropDown' data= {data} />
         </div>
-        
-        <Content data={profile} />
+      
+          <Content data={profile} />
+  
       </div>
     </section>
     </>
@@ -44,5 +43,6 @@ function Content(props) {
       return <DetailProfile data={data[i]} />
     }
   }
+
   return <DetailProfile data={data[0]} />
 }
